@@ -1,10 +1,6 @@
 <?php
 
 class LoginSystem {
-    function generate_random_number() {
-        return rand(pow(10, 6-1), pow(10, 6)-1);
-    }
-
     function login($email, $password) {
         require_once('db.php');
         require_once('php/Encryption.php');
@@ -123,5 +119,9 @@ class LoginSystem {
         } else {
             return 'This link has expired. Please <a href="forgotten-password">request a new password reset link</a>.';
         }
+    }
+
+    function generate_random_number() {
+        return rand(pow(10, 6-1), pow(10, 6)-1);
     }
 }
