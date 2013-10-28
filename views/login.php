@@ -20,7 +20,7 @@
 </form>
 
 <a href="create-account">Create a new account</a>
-<a href="forgotten-password">Reset your password</a>
+<a href="forgotten-password">Forgotten your password</a>
 
 <?php
 if(isset($_SESSION['status'])) {
