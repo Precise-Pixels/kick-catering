@@ -1,7 +1,5 @@
 <h1>VERIFY ACCOUNT</h1>
 
-<p>Verifying your account...</p>
-
 <?php
 require_once('php/LoginSystem.php');
 $login_system = new LoginSystem();
