@@ -3,7 +3,7 @@
 <form method="post" action="">
     <table>
         <tr>
-            <td><label for="password">Password: </label></td>
+            <td><label for="password">Password:</label></td>
             <td><input type="password" name="password" required autofocus/></td>
         </tr>
     

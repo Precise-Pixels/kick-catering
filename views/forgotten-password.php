@@ -3,7 +3,7 @@
 <form method="post" action="">
     <table>
         <tr>
-            <td><label for="email">Email: </label></td>
+            <td><label for="email">Email:</label></td>
             <td><input type="email" name="email" required autofocus/></td>
         </tr>
 
