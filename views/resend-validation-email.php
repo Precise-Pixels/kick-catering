@@ -9,7 +9,7 @@
     
         <tr>
             <td></td>
-            <td><input type="submit" id="submit" value="Resend" name="submit"/></td>
+            <td><input type="submit" value="Resend"/></td>
         </tr>
     </table>
 </form>

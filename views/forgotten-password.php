@@ -9,7 +9,7 @@
 
         <tr>
             <td></td>
-            <td><input type="submit" id="submit" value="Reset" name="submit"/></td>
+            <td><input type="submit" value="Reset"/></td>
         </tr>
     </table>
 </form>
