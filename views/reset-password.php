@@ -4,7 +4,7 @@
     <table>
         <tr>
             <td><label for="password">Password: </label></td>
-            <td><input type="password" name="password" autofocus/></td>
+            <td><input type="password" name="password" required autofocus/></td>
         </tr>
     
         <tr>

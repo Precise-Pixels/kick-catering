@@ -4,12 +4,12 @@
     <table>
         <tr>
             <td><label for="email">Email: </label></td>
-            <td><input type="email" name="email" autofocus/></td>
+            <td><input type="email" name="email" required autofocus/></td>
         </tr>
     
         <tr>
             <td><label for="password">Password: </label></td>
-            <td><input type="password" name="password"/></td>
+            <td><input type="password" name="password" required/></td>
         </tr>
     
         <tr>
