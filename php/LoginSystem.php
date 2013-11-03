@@ -43,15 +43,16 @@ class LoginSystem {
         $encryption = new Encryption;
         $password_e = $encryption->encrypt($password);
 
-        $rand = $this->generate_random_number();
+        $rand1 = $this->generate_random_number();
+        $rand2 = $this->generate_random_number();
 
-        $STH = $DBH->prepare("INSERT INTO users (email, password, valid, validate_rand, reset_rand) value (:email, :password, 0, $rand, 0)");
+        $STH = $DBH->prepare("INSERT INTO users (email, password, valid, validate_rand, reset_rand) value (:email, :password, 0, $rand1, $rand2)");
         $STH->bindParam(':email', $email);
         $STH->bindParam(':password', $password_e);
         $STH->execute();
 
         $mail_client = new MailClient();
-        $mail_client->send_msg($email, 'Verify your Kick Catering account', "Please follow this link to verify your Kick Catering account: http://kickcatering.co.uk/beta/verify-account?e=$email&r=$rand");
+        $mail_client->send_msg($email, 'Verify your Kick Catering account', "Please follow this link to verify your Kick Catering account: http://kickcatering.co.uk/beta/verify-account?e=$email&r=$rand1");
 
         return 'Account successfully created. We have sent a verification link to your email. Please verify your account before attempting to log in.';
     }
