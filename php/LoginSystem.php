@@ -21,7 +21,7 @@ class LoginSystem {
                     return 'Wrong email and/or password';
                 }
             } else {
-                return 'Please verify your account by clicking the link in your email before attemping to log in.';
+                return 'Please verify your account by clicking the link in your email before attemping to log in. If you have not receive a verification email, please check your spam/junk or <a href="resend-validation-email">request another verification email</a>.';
             }
         } else {
             return 'Wrong email and/or password';
@@ -54,7 +54,22 @@ class LoginSystem {
         $mail_client = new MailClient();
         $mail_client->send_msg($email, 'Verify your Kick Catering account', "Please follow this link to verify your Kick Catering account: http://kickcatering.co.uk/beta/verify-account?e=$email&r=$rand1");
 
-        return 'Account successfully created. We have sent a verification link to your email. Please verify your account before attempting to log in.';
+        return 'Account successfully created. We have sent a verification link to your email. Please verify your account before attempting to log in. If you have not receive a verification email, please check your spam/junk or <a href="resend-validation-email">request another verification email</a>.';
+    }
+
+    function resend_validation_email($email) {
+        require('db.php');
+        require_once('php/MailClient.php');
+
+        $rand = $this->generate_random_number();
+
+        $STH = $DBH->prepare("UPDATE users SET validate_rand='$rand' WHERE email='$email'");
+        $STH->execute();
+
+        $mail_client = new MailClient();
+        $mail_client->send_msg($email, 'Verify your Kick Catering account', "Please follow this link to verify your Kick Catering account: http://kickcatering.co.uk/beta/verify-account?e=$email&r=$rand");
+
+        return 'We have sent a verification link to your email. Please verify your account before attempting to log in.';
     }
 
     function validate_user($email, $rand) {
