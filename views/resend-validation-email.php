@@ -1,4 +1,4 @@
-<h1>RESET PASSWORD</h1>
+<h1>RESEND VALIDATION EMAIL</h1>
 
 <form method="post" action="">
     <table>
