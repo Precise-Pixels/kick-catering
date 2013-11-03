@@ -8,15 +8,16 @@ class LoginSystem {
         $encryption = new Encryption;
         $password_e = $encryption->encrypt($password);
 
-        $STH = $DBH->query("SELECT password, valid FROM users WHERE email='$email'");
+        $STH = $DBH->query("SELECT id, password, valid FROM users WHERE email='$email'");
         $STH->setFetchMode(PDO::FETCH_OBJ);
         $row = $STH->fetch();
 
         if($row) {
             if($row->valid == 1) {
                 if($row->password === $password_e) {
-                    $_SESSION['status'] = 'loggedin';
-                    $_SESSION['user']   = $email;
+                    $_SESSION['status']     = 'loggedin';
+                    $_SESSION['user_id']    = $row->id;
+                    $_SESSION['user_email'] = $email;
                     header('location: recruitment-platform');
                 } else {
                     return 'Wrong email and/or password';
@@ -31,6 +32,8 @@ class LoginSystem {
 
     function logout() {
         unset($_SESSION['status']);
+        unset($_SESSION['user_id']);
+        unset($_SESSION['user_email']);
         $referer = parse_url($_SERVER['HTTP_REFERER']);
         $referer_path = $referer['path'];
         header("location: $referer_path");
