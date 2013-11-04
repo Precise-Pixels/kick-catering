@@ -1,6 +1,6 @@
 <h1>RESEND VALIDATION EMAIL</h1>
 
-<form method="post" action="">
+<form method="post">
     <table>
         <tr>
             <td><label for="email">Email:</label></td>

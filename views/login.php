@@ -1,6 +1,6 @@
 <h1>LOGIN</h1>
 
-<form method="post" action="">
+<form method="post">
     <table>
         <tr>
             <td><label for="email">Email:</label></td>

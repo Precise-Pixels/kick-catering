@@ -1,6 +1,6 @@
 <h1>RESET PASSWORD</h1>
 
-<form method="post" action="">
+<form method="post">
     <table>
         <tr>
             <td><label for="password">Password:</label></td>
