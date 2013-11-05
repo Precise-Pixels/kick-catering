@@ -5,25 +5,25 @@
         <tr><td colspan="2"><h2>Listing Information</h2></td></tr>
 
         <tr>
-            <td><label for="company-name">Company Name:</label></td>
-            <td><input type="text" name="company-name" required autofocus/></td>
+            <td><label for="company_name">Company Name:</label></td>
+            <td><input type="text" name="company_name" required autofocus/></td>
         </tr>
 
         <tr>
-            <td><label for="ad-title">Ad Title:</label></td>
-            <td><input type="text" name="ad-title" required/></td>
+            <td><label for="ad_title">Ad Title:</label></td>
+            <td><input type="text" name="ad_title" required/></td>
         </tr>
 
         <tr>
-            <td><label for="job-description">Job Description:</label></td>
-            <td><textarea name="job-description" required></textarea></td>
+            <td><label for="job_description">Job Description:</label></td>
+            <td><textarea name="job_description" required></textarea></td>
         </tr>
 
         <tr>
-            <td><label for="contract-type">Type of Contract:</label></td>
+            <td><label for="contract_type">Type of Contract:</label></td>
             <td>
-                <input type="radio" name="contract-type" id="temporary" value="temporary" required/> <label for="temporary">Temporary</label>
-                <input type="radio" name="contract-type" id="permanent" value="permanent" required/> <label for="permanent">Permanent</label>
+                <input type="radio" name="contract_type" id="temporary" value="temporary" required/> <label for="temporary">Temporary</label>
+                <input type="radio" name="contract_type" id="permanent" value="permanent" required/> <label for="permanent">Permanent</label>
             </td>
         </tr>
 
@@ -51,34 +51,34 @@
         </tr>
 
         <tr>
-            <td><label for="address-line-1">Address Line 1:</label></td>
-            <td><input type="text" name="address-line-1" required/></td>
+            <td><label for="address_line_1">Address Line 1:</label></td>
+            <td><input type="text" name="address_line_1" required/></td>
         </tr>
 
         <tr>
-            <td><label for="address-line-2">Address Line 2 <small>optional</small>:</label></td>
-            <td><input type="text" name="address-line-2"/></td>
+            <td><label for="address_line_2">Address Line 2 <small>optional</small>:</label></td>
+            <td><input type="text" name="address_line_2"/></td>
         </tr>
 
         <tr>
-            <td><label for="address-city">Town/City:</label></td>
-            <td><input type="text" name="address-city" required/></td>
+            <td><label for="address_city">Town/City:</label></td>
+            <td><input type="text" name="address_city" required/></td>
         </tr>
 
         <tr>
-            <td><label for="address-county">County:</label></td>
-            <td><input type="text" name="address-county" required/></td>
+            <td><label for="address_county">County:</label></td>
+            <td><input type="text" name="address_county" required/></td>
         </tr>
 
         <tr>
-            <td><label for="address-postcode">Postcode:</label></td>
-            <td><input type="text" name="address-postcode" required/></td>
+            <td><label for="address_postcode">Postcode:</label></td>
+            <td><input type="text" name="address_postcode" required/></td>
         </tr>
 
         <tr>
-            <td><label for="address-country">Country:</label></td>
+            <td><label for="address_country">Country:</label></td>
             <td>
-                <select name="address-country" required>
+                <select name="address_country" required>
                     <option value="">--</option>
                     <option value="AL">Albania</option>
                     <option value="DZ">Algeria</option>
@@ -351,3 +351,48 @@
         </tr>
     </table>
 </form>
+
+<?php
+require_once('php/RecruitmentPlatform.php');
+$recruitment_platform = new RecruitmentPlatform();
+
+if($_POST) {
+    $company_name     = $_POST['company_name'];
+    $ad_title         = $_POST['ad_title'];
+    $job_description  = $_POST['job_description'];
+    $contract_type    = $_POST['contract_type'];
+    $category         = $_POST['category'];
+    $location         = $_POST['location'];
+    $address_line_1   = $_POST['address_line_1'];
+    $address_line_2   = $_POST['address_line_2'];
+    $address_city     = $_POST['address_city'];
+    $address_county   = $_POST['address_county'];
+    $address_postcode = $_POST['address_postcode'];
+    $address_country  = $_POST['address_country'];
+    $website          = $_POST['website'];
+    $name             = $_POST['name'];
+    $email            = $_POST['email'];
+    $telephone        = $_POST['telephone'];
+
+    if( !empty($company_name) &&
+        !empty($ad_title) &&
+        !empty($job_description) &&
+        !empty($contract_type) &&
+        !empty($category) &&
+        !empty($location) &&
+        !empty($address_line_1) &&
+        !empty($address_city) &&
+        !empty($address_county) &&
+        !empty($address_postcode) &&
+        !empty($address_country) &&
+        !empty($website) &&
+        !empty($name) &&
+        !empty($email) &&
+        !empty($telephone) ) {
+        $response = $recruitment_platform->employers_submit($company_name, $ad_title, $job_description, $contract_type, $category, $location, $address_line_1, $address_line_2, $address_city, $address_county, $address_postcode, $address_country, $website, $name, $email, $telephone);
+        echo $response;
+    } else {
+        echo 'Please fill out all the fields.';
+    }
+}
+?>
