@@ -1,6 +1,6 @@
 <h1>EMPLOYERS SUBMIT</h1>
 
-<form method="post" action="">
+<form method="post">
     <table>
         <tr><td colspan="2"><h2>Listing Information</h2></td></tr>
 
