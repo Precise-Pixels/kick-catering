@@ -10,34 +10,34 @@
         </tr>
 
         <tr>
-            <td><label for="address-line-1">Address Line 1:</label></td>
-            <td><input type="text" name="address-line-1" required/></td>
+            <td><label for="address_line_1">Address Line 1:</label></td>
+            <td><input type="text" name="address_line_1" required/></td>
         </tr>
 
         <tr>
-            <td><label for="address-line-2">Address Line 2 <small>optional</small>:</label></td>
-            <td><input type="text" name="address-line-2"/></td>
+            <td><label for="address_line_2">Address Line 2 <small>optional</small>:</label></td>
+            <td><input type="text" name="address_line_2"/></td>
         </tr>
 
         <tr>
-            <td><label for="address-city">Town/City:</label></td>
-            <td><input type="text" name="address-city" required/></td>
+            <td><label for="address_city">Town/City:</label></td>
+            <td><input type="text" name="address_city" required/></td>
         </tr>
 
         <tr>
-            <td><label for="address-county">County:</label></td>
-            <td><input type="text" name="address-county" required/></td>
+            <td><label for="address_county">County:</label></td>
+            <td><input type="text" name="address_county" required/></td>
         </tr>
 
         <tr>
-            <td><label for="address-postcode">Postcode:</label></td>
-            <td><input type="text" name="address-postcode" required/></td>
+            <td><label for="address_postcode">Postcode:</label></td>
+            <td><input type="text" name="address_postcode" required/></td>
         </tr>
 
         <tr>
-            <td><label for="address-country">Country:</label></td>
+            <td><label for="address_country">Country:</label></td>
             <td>
-                <select name="address-country" required>
+                <select name="address_country" required>
                     <option value="">--</option>
                     <option value="AL">Albania</option>
                     <option value="DZ">Algeria</option>
@@ -338,12 +338,12 @@ $recruitment_platform = new RecruitmentPlatform();
 
 if($_POST) {
     $name             = $_POST['name'];
-    $address_line_1   = $_POST['address-line-1'];
-    $address_line_2   = $_POST['address-line-2'];
-    $address_city     = $_POST['address-city'];
-    $address_county   = $_POST['address-county'];
-    $address_postcode = $_POST['address-postcode'];
-    $address_country  = $_POST['address-country'];
+    $address_line_1   = $_POST['address_line_1'];
+    $address_line_2   = $_POST['address_line_2'];
+    $address_city     = $_POST['address_city'];
+    $address_county   = $_POST['address_county'];
+    $address_postcode = $_POST['address_postcode'];
+    $address_country  = $_POST['address_country'];
     $email            = $_POST['email'];
     $telephone        = $_POST['telephone'];
     $category         = $_POST['category'];
