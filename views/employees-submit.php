@@ -1,3 +1,10 @@
+<?php
+    if($_SESSION['status'] != 'loggedin') {
+        $_SESSION['status'] = 'notloggedin';
+        header('location: login');
+    }
+?>
+
 <h1>EMPLOYEES SUBMIT</h1>
 
 <form enctype="multipart/form-data" method="post">
