@@ -21,7 +21,7 @@ class LoginSystem {
                     return 'Wrong email and/or password';
                 }
             } else {
-                return 'Please verify your account by clicking the link in your email before attemping to log in. If you have not receive a verification email, please check your spam/junk or <a href="resend-validation-email">request another verification email</a>.';
+                return 'Please verify your account by clicking the verification link in your email before attempting to log in. If you have not receive a verification email, please check your spam/junk or <a href="resend-validation-email">request another verification email</a>.';
             }
         } else {
             return 'Wrong email and/or password';
@@ -110,7 +110,7 @@ class LoginSystem {
         $mail_client = new MailClient();
         $mail_client->send_msg($email, 'Reset your Kick Catering account password', "Please follow this link to reset your Kick Catering account password: http://kickcatering.co.uk/beta/reset-password?e=$email&r=$rand");
 
-        return 'We have sent a password reset link to your email. Please follow the link in the email.';
+        return 'We have sent instructions on how to reset your password to your email. Please check your emails.';
     }
 
     function reset_password($email, $password, $rand) {
