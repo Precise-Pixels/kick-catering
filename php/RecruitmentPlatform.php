@@ -37,7 +37,7 @@ class RecruitmentPlatform {
 
                 return 'Submitted successfully.';
             } else {
-                echo 'Please ensure CV is one of the accepted file types and does not exceeds 2MB.';
+                echo 'Please ensure CV is one of the accepted file types and does not exceed 2MB.';
             }
         } else {
             echo 'File upload error ' . $_FILES['cv']['error'] . '. Please try again or contact <a href="mailto:info@kickcatering.co.uk">info@kickcatering.co.uk</a>.';
