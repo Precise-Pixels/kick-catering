@@ -16,7 +16,7 @@ class LoginSystem {
             if($row->valid == 1) {
                 if($row->password === $password_e) {
                     $_SESSION['status'] = 'loggedin';
-                    header('location: recruitment-platform');
+                    (isset($_GET['r']) ? header("location:" . $_GET['r']) : header('location: recruitment-platform'));
                 } else {
                     return 'Wrong email and/or password';
                 }

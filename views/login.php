@@ -28,7 +28,7 @@ if(isset($_SESSION['status'])) {
         echo 'You must be logged in to view this page.';
         unset($_SESSION['status']);
     } elseif($_SESSION['status'] == 'loggedin') {
-        header('location: recruitment-platform');
+        echo 'You are already logged in!';
     }
 }
 
