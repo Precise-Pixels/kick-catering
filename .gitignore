@@ -2,3 +2,5 @@
 build
 css
 node_modules
+php/db.php
+php/encryption.php
