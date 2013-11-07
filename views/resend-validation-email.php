@@ -1,15 +1,15 @@
-<h1>RESET PASSWORD</h1>
+<h1>RESEND VALIDATION EMAIL</h1>
 
-<form method="post" action="">
+<form method="post">
     <table>
         <tr>
-            <td><label for="email">Email: </label></td>
-            <td><input type="email" name="email" autofocus/></td>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" name="email" required autofocus/></td>
         </tr>
     
         <tr>
             <td></td>
-            <td><input type="submit" id="submit" value="Resend" name="submit"/></td>
+            <td><input type="submit" value="Resend"/></td>
         </tr>
     </table>
 </form>
