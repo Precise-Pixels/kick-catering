@@ -1,0 +1,38 @@
+.half {
+    width: (100%/1);
+    float: left;
+}
+
+.quarter {
+    width: (100%/1);
+}
+
+@media ($min-bp-a) {
+    .half {
+        width: (100%/2);
+    }
+
+    .quarter {
+        width: (100%/2);
+    }
+}
+
+@media ($min-bp-b) {
+    .half {
+        width: (100%/2);
+    }
+
+    .quarter {
+        width: (100%/4);
+    }
+}
+
+@media ($min-bp-c) {
+    .half {
+        width: (100%/2);
+    }
+
+    .quarter {
+        width: (100%/4);
+    }
+}
