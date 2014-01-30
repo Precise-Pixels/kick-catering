@@ -17,7 +17,7 @@
     width: 100%;
     float: left;
     padding: 20px;
-    border: 1px solid #333;
+    border: 0;
     background: #222222;
 }
 
@@ -55,6 +55,10 @@
     #homepage-services, #homepage-quote {
         width: 50%;
         padding: 0;
+    }
+
+    #homepage-services {
+        border: 1px solid #333;
     }
 }
 
