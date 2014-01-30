@@ -1,5 +1,5 @@
 <header>
-    <div id="header-inner">
+    <div class="align-centre">
         <img class="logo" src="img/logo.png"/>
         <input type="checkbox" id="menu-toggle"/>
         <div id="nav-fade-out"></div>
