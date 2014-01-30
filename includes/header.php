@@ -1,12 +1,17 @@
 <header>
-    <img class="kicklogo" src="img/logo.png"/>
-    <nav>
-        <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">services</a></li>
-            <li><a href="#">recruitment</a></li>
-            <li><a href="#">contact</a></li>
-        </ul>
-    </nav>
+    <div id="header-inner">
+        <img class="logo" src="img/logo.png"/>
+        <input type="checkbox" id="menu-toggle"/>
+        <div id="nav-fade-out"></div>
+        <label for="menu-toggle" id="menu-btn"></label>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Recruitment</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>

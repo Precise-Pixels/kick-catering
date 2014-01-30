@@ -1,0 +1,37 @@
+h1 { 
+    font-size: 36px;
+    padding: 0 0 20px 0;
+    margin: 0;
+    color: $purple;
+}
+
+h2 { 
+    font-size: 18px; 
+    font-weight: 600;
+}
+
+p {
+    font-size: 13px;
+}
+
+blockquote {
+    padding: 20px;
+    border-left: 10px solid $purple;
+    font-family: 200px;
+    font-weight: 200;
+    color: #FFF;
+}
+
+blockquote:before {
+    content: open-quote;
+    line-height: 0.1em;
+    margin-right: 14px;
+    vertical-align: -0.4em;
+    font-size: 60px;
+    font-weight: 600;
+    color: $purple;
+}
+
+a {
+    font-weight: 600;
+}

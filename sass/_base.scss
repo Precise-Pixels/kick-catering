@@ -1,8 +1,39 @@
-footer, header, nav {
+* {
+   box-sizing: border-box;
+}
+
+footer, header, nav, section {
   display: block;
 }
 
 body {
-    background: #DDD;
     margin: 0;
+    padding: 0;
+    font-family: "Open Sans", Arial, Sans-Serif;
+    font-weight: 400;
+    // font weights: 200, 400, 600, 700, 800
+    color: #222;
+    background: #FFF;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.section-inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.l-grey {
+    color: #000;
+    background: #EEE;
+}
+
+.d-grey {
+    color: #EEE;
+    background: #222;
 }

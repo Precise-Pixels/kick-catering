@@ -1,81 +1,77 @@
 // If we need to use page-by-page styles, bodyclass.php will need to be imported in front_view.php
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #FFFFFF;
-    font-family: helvetica;
-}
-
-
-h1 { font-size: 1.5em; padding: 0 10px 0 10px; color: #9b197a; }
-
-h2 { font-size: 1.25em; }
-
-header {
+#image-gallery {
     width: 100%;
+    height: 400px;
+    text-align: center;
+    background-color: $logo-purple;
 }
 
-.imagegallery {
-    text-align: center;
-    height: 300px;
+#homepage-text {
     width: 100%;
-    background-color: #EEE;
+    height: auto;
+    overflow: hidden;
+    padding: 40px 20px 40px 20px;
 }
 
-.indexdescription {
-    padding: 0 10px 0 10px;
+#homepage-services {
+    width: 100%;
+    float: left;
+    padding: 20px;
+    background: #222222;
 }
 
-.typesofwork {
-    background-color: #222222;
-    padding: 1% 0 1% 0;
-}
-
-.chefagency, .consultancy, .cateringcontracts, .procurements {
-    background-color: #222222;
-    color: white;
-    text-align: center;
-    margin: 1%;
-    padding: 3%;
-    border: 1px solid #404040;
-    cursor: pointer;
-}
-
-.chefagency:hover, .consultancy:hover, .cateringcontracts:hover, .procurements:hover {
-    background-color: #333333
-}
-
-.quote {
-    color: white;
-    position: relative;
-    background-color: #222222;
-    display: block;
-    text-align: center;
-    font-style: italic;
-    margin: 0;
+.service {
+    width: 50%;
+    float: left;
     padding: 10px;
+    border: 1px solid #333;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    background: #222;
+    img {
+        height: 45px;
+    }
 }
 
-.quote:before {
-    content: '"';
-    color: purple;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10px;
-    height: 10px;
+.service:hover {
+    background: #333;
 }
 
-.quote:after {
-    content: '"';
-    color: purple;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 10px;
-    height: 10px;
+#homepage-quote {
+    width: 100%;
+    float: right;
+    background:#222;
+    padding: 20px;
 }
+
+@media ($min_bp_a) {
+
+    .service {
+        padding: 25px;
+    }
+    
+    #homepage-services, #homepage-quote {
+        width: 50%;
+        padding: 0;
+    }
+}
+
+@media ($min_bp_b) {
+
+    #homepage-text {
+        padding: 60px 40px 60px 40px;
+    }
+
+    .homepage-text--left {
+        width: 48%;
+        float: left;
+    }
+
+    .homepage-text--right {
+        width: 48%;
+        float: right;
+    }
+}
+
+
