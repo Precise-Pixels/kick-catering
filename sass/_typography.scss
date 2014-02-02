@@ -1,5 +1,6 @@
 h1 { 
-    font-size: 36px;
+    font-size: 32px;
+    font-weight: 700;
     padding: 0 0 20px 0;
     margin: 0;
     color: $purple;
@@ -19,6 +20,7 @@ blockquote {
     border-left: 10px solid $purple;
     font-family: 200px;
     font-weight: 200;
+    font-size: 14px;
     color: #FFF;
 }
 
@@ -33,5 +35,8 @@ blockquote:before {
 }
 
 a {
+    color: #333;
+    border-bottom: 1px solid #333;
+    text-decoration: none;
     font-weight: 600;
 }

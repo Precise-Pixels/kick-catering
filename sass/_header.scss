@@ -5,8 +5,17 @@
 }
 
 header {
-    padding: 20px;
+    height: auto;
+    overflow: hidden;
     text-align: center;
+}
+
+.header-align-centre {
+    width: 100%;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 45px 40px 45px;
 }
 
 #menu-toggle {
@@ -96,14 +105,29 @@ li:hover > a {
     color: #EEE;
 }
 
-li a {
+nav li a {
     text-decoration: none;
     color: #222;
 }
 
-@media ($min_bp_a) {
+@media ($min_bp_b) {
 
     #menu-btn {
         display: none;
     }
-}
+} 
+
+@media ($min_bp_c) {
+
+    header {
+        text-align: left;
+    }
+
+    #logo {
+        float: left;
+    }
+
+    #header-contact {
+        float: right;
+    }
+}    

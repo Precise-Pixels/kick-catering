@@ -1,9 +1,15 @@
 // If we need to use page-by-page styles, bodyclass.php will need to be imported in front_view.php
 #image-gallery {
     width: 100%;
-    height: 400px;
+    height: auto;
+    margin: 0 auto;
     text-align: center;
-    background-color: $logo-purple;
+    background: $purple;
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
 }
 
 #homepage-text {
@@ -55,6 +61,10 @@
     #homepage-services, #homepage-quote {
         width: 50%;
         padding: 0;
+    }
+
+    #homepage-quote {
+        margin: 8% 0 0 0;
     }
 
     #homepage-services {
