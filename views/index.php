@@ -5,12 +5,10 @@
 </section>
 
 <section>
-    <div class="align-centre l-grey">
-        <div id="homepage-text">
-            <h1>Specialist Catering</h1>
-            <p class="homepage-text--left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien odio, hendrerit vitae diam fermentum, pulvinar iaculis metus. Ut mattis pulvinar sapien ac tempor.</p>
-            <p class="homepage-text--right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien odio, hendrerit vitae diam <a href="#">fermentum</a>, pulvinar iaculis metus. Ut mattis pulvinar sapien ac tempor.</p>
-        </div>
+    <div class="section-padding align-centre l-grey">
+        <h1>Specialist Catering</h1>
+        <p class="homepage-text--left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien odio, hendrerit vitae diam fermentum, pulvinar iaculis metus. Ut mattis pulvinar sapien ac tempor.</p>
+        <p class="homepage-text--right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien odio, hendrerit vitae diam <a href="#">fermentum</a>, pulvinar iaculis metus. Ut mattis pulvinar sapien ac tempor.</p>
     </div>
 </section>
 
