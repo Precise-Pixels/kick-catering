@@ -20,13 +20,13 @@ class LoginSystem {
                     $_SESSION['user_email'] = $email;
                     (isset($_GET['r']) ? header("location:" . $_GET['r']) : header('location: recruitment-platform'));
                 } else {
-                    return 'Wrong email and/or password';
+                    return 'Wrong email and/or password.';
                 }
             } else {
                 return 'Please verify your account by clicking the verification link in your email before attempting to log in. If you have not receive a verification email, please check your spam/junk or <a href="resend-validation-email">request another verification email</a>.';
             }
         } else {
-            return 'Wrong email and/or password';
+            return 'Wrong email and/or password.';
         }
     }
 

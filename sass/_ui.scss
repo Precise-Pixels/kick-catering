@@ -1,0 +1,58 @@
+.btn {
+    padding: 10px 25px;
+    border: 0;
+    cursor: pointer;
+    color: #FFF;
+    font-weight: 600;
+    background: $purple;
+}
+
+.btn:hover {
+    background: #222;
+}
+
+form {
+    padding: 20px 0;
+}
+
+table {
+    width: 100%;
+}
+
+input {
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+}
+
+input[type=submit] {
+    width: 100%;
+    margin-top: 15px;
+}
+
+label {
+    font-weight: 800;
+}
+
+a:focus,
+input:focus {
+    outline-color: #999;
+}
+
+@media ($min_bp_a) {
+    input[type=text],
+    input[type=email],
+    input[type=password] {
+        width: 90%;
+    }
+
+    input[type=submit] {
+        width: 90%;
+    }
+}
