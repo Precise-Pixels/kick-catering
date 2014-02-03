@@ -1,4 +1,10 @@
-<h1>VERIFY ACCOUNT</h1>
+<section class="l-grey">
+    <div class="section-padding align-centre">
+
+        <h1>Verify Account</h1>
+
+    </div>
+</section>
 
 <?php
 require_once('php/LoginSystem.php');

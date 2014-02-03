@@ -5,4 +5,10 @@
     }
 ?>
 
-<h1>RECRUITMENT PLATFORM</h1>
+<section class="l-grey">
+    <div class="section-padding align-centre">
+
+        <h1>Recruitment Platform</h1>
+
+    </div>
+</section>

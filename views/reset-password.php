@@ -1,18 +1,24 @@
-<h1>RESET PASSWORD</h1>
+<section class="l-grey">
+    <div class="section-padding align-centre">
 
-<form method="post">
-    <table>
-        <tr>
-            <td><label for="password">Password:</label></td>
-            <td><input type="password" name="password" required autofocus/></td>
-        </tr>
-    
-        <tr>
-            <td></td>
-            <td><input type="submit" value="Reset"/></td>
-        </tr>
-    </table>
-</form>
+        <h1>Reset Password</h1>
+
+        <form method="post">
+            <table>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" name="password" required autofocus/></td>
+                </tr>
+            
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Reset"/></td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+</section>
 
 <?php
 require_once('php/LoginSystem.php');

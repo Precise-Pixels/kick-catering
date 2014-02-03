@@ -1,18 +1,24 @@
-<h1>RESEND VALIDATION EMAIL</h1>
+<section class="l-grey">
+    <div class="section-padding align-centre">
 
-<form method="post">
-    <table>
-        <tr>
-            <td><label for="email">Email:</label></td>
-            <td><input type="email" name="email" required autofocus/></td>
-        </tr>
-    
-        <tr>
-            <td></td>
-            <td><input type="submit" value="Resend"/></td>
-        </tr>
-    </table>
-</form>
+        <h1>Resend Validation Email</h1>
+
+        <form method="post">
+            <table>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" name="email" required autofocus/></td>
+                </tr>
+            
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Resend"/></td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+</section>
 
 <?php
 require_once('php/LoginSystem.php');
