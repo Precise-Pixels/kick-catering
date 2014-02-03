@@ -1,6 +1,6 @@
 <header>
     <div class="header-padding align-centre">
-        <img id="logo" src="img/logo.png"/>
+        <a href="/" id="logo"><img src="img/logo.png"/></a>
         <p id="header-contact">Kick Catering | Address Line 1, Line Two, Third Line, ABC 1AB | 012345 123456</p>
         <input type="checkbox" id="menu-toggle"/>
         <label for="menu-toggle" id="menu-btn"></label>
