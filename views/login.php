@@ -51,7 +51,9 @@
         }
         ?>
 
-        <form method="post" id="login-form" class="third active">
+        <p>Information about login / recruitment platform</p>
+
+        <form method="post" id="login-form" class="half active">
             <h1>Login</h1>
             <table>
                 <tr><td><label for="email">Email:</label></td></tr>
@@ -65,7 +67,7 @@
             <p><a href="forgotten-password">Forgotten your password</a></p>
         </form>
 
-        <form method="post" id="register-form" class="third">
+        <form method="post" id="register-form" class="half">
             <h1>Register</h1>
             <table>
                 <tr><td><label for="email">Email:</label></td></tr>
@@ -83,10 +85,6 @@
                 <tr><td><input type="submit" name="register-submit" value="REGISTER" class="btn"/></td></tr>
             </table>
         </form>
-
-        <div class="third">
-            <p>Information about login / recruitment platform</p>
-        </div>
 
     </div>
 </section>

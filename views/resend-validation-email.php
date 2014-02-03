@@ -19,7 +19,7 @@
         }
         ?>
 
-        <form method="post" novalidate>
+        <form method="post" class="half">
             <table>
                 <tr><td><label for="email">Email:</label></td></tr>
                 <tr><td><input type="email" name="email" required autofocus/></td></tr>
@@ -27,6 +27,8 @@
                 <tr><td><input type="submit" value="RESEND" class="btn"/></td></tr>
             </table>
         </form>
+
+        <p class="half">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, porro, ex maiores amet dolore cum vitae aut quos! Architecto, et illo vel facilis repellendus inventore labore explicabo assumenda exercitationem sit.</p>
 
     </div>
 </section>

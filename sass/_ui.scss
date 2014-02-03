@@ -29,20 +29,42 @@ table {
     width: 100%;
 }
 
-input {
-    font-family: "Open Sans", Arial, sans-serif;
-}
-
-input[type=text],
-input[type=email],
-input[type=password] {
+input,
+select,
+textarea {
     width: 100%;
     padding: 10px;
     border: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+input[type=file]::-webkit-file-upload-button {
+    border: 0;
+    color: #FFF;
+    margin: 0;
+    padding: 0 20px 0 0;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: 0;
+}
+
+input[type=file]::-ms-browse {
+    border: 0;
+    color: #FFF;
+    margin: 0;
+    padding: 0 20px 0;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: 0;
+}
+
+input[type=radio] {
+    width: auto;
 }
 
 input[type=submit] {
-    width: 100%;
     margin-top: 15px;
 }
 
@@ -50,14 +72,13 @@ label {
     font-weight: 800;
 }
 
-a:focus,
-input:focus {
-    outline-color: #999;
+textarea {
+    height: 100px;
 }
 
-@media ($min_bp_a) {
-    #login-form input,
-    #register-form input {
-        width: 90%;
-    }
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline-color: #999;
 }

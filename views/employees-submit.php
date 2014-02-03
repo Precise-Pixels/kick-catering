@@ -46,7 +46,7 @@
         }
         ?>
 
-        <form enctype="multipart/form-data" method="post">
+        <form enctype="multipart/form-data" method="post" class="half">
             <table>
                 <tr><td colspan="2"><h2>Personal Information</h2></td></tr>
 
@@ -323,7 +323,7 @@
                 <tr><td><input type="tel" name="telephone" required/></td></tr>
 
                 <tr><td><label for="cv">CV Upload: <small>Max file size: 2MB, Accepted file types: .doc, .docx, .pdf, .txt, .rtf, .jpg, .png</small></label></td></tr>
-                <tr><td><input type="file" name="cv" required/></td></tr>
+                <tr><td><input type="file" name="cv" class="btn" required/></td></tr>
 
                 <tr><td colspan="2"><h2>Looking For</h2></td></tr>
 
@@ -356,6 +356,8 @@
                 <tr><td><input type="submit" value="SUBMIT" class="btn"/></td></tr>
             </table>
         </form>
+
+        <p class="half">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, porro, ex maiores amet dolore cum vitae aut quos! Architecto, et illo vel facilis repellendus inventore labore explicabo assumenda exercitationem sit.</p>
 
     </div>
 </section>
