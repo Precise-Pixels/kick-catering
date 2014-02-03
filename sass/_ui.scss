@@ -15,11 +15,13 @@ form {
     padding: 20px 0;
 }
 
-form:not(.hover) {
+#login-form:not(.hover),
+#register-form:not(.hover), {
     opacity: .4;
 }
 
-form.active {
+#login-form.active,
+#register-form.active {
     opacity: 1;
 }
 
