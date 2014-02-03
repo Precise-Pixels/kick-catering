@@ -1,5 +1,6 @@
 <header>
     <div class="header-padding align-centre">
+        <?php require_once('loginout_button.php'); ?>
         <img id="logo" src="img/logo.png"/>
         <input type="checkbox" id="menu-toggle"/>
         <div id="nav-fade-out"></div>

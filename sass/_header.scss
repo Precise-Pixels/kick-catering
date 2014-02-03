@@ -10,17 +10,21 @@ header {
 }
 
 .header-padding {
-    padding: 40px 45px 40px 45px;
+    position: relative;
+    padding: 40px 45px;
+}
+
+#header-contact {
+    color: #999;
 }
 
 #menu-toggle {
-  display: none;
+    display: none;
 }
 
 #menu-toggle:checked ~ nav {
     top: 0;
-    opacity: 1;
-    overflow: static;
+    display: block;
 }
 
 #menu-toggle:checked ~ #menu-btn {
@@ -29,8 +33,7 @@ header {
 }
 
 #menu-toggle:checked ~ #nav-fade-out {
-    opacity: 0.6;
-    visibility: visible;
+    display: block;
 }
 
 #menu-btn {
@@ -42,21 +45,16 @@ header {
     left: 10px;
     cursor: pointer;
     background: #CCC;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    z-index: 9999 !important;
 }
 
 #nav-fade-out {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    opacity: .6;
+    display: none;
     background: #000;
 }
 
@@ -65,64 +63,97 @@ nav {
     position: fixed;
     top: -315px;
     left: 0;
-    opacity: 0;
-    margin: 0 auto;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    z-index: 9999 !important;
+    display: none;
 }
 
 nav ul {
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    overflow: hidden;
     padding: 0;
-    margin: 0 auto;
-    list-style: none;
-    text-decoration: none;
+    margin: 0;
 }
 
-li {
+nav li {
     width: 100%;
     float: left;
     list-style: none;
-    padding: 20px;  
+    padding: 20px;
     border-bottom: 2px solid #CCC;
     background: #EEE;
 }
 
-li:hover {
+nav li:hover {
     background: $purple;
 }
 
-li:hover > a {
+nav li:hover > a {
     color: #EEE;
 }
 
-nav li a {
+nav a {
     text-decoration: none;
     color: #222;
 }
 
+nav a:hover {
+    border-bottom: 0;
+}
+
 @media ($min_bp_b) {
+    #login-btn {
+        top: 40px;
+        right: 45px;
+    }
+
+    #header-contact {
+        position: absolute;
+        top: 100px;
+        right: 45px;
+    }
 
     #menu-btn {
         display: none;
     }
-} 
-
-@media ($min_bp_c) {
 
     header {
         text-align: left;
     }
 
-    #logo {
-        float: left;
+    nav {
+        width: auto;
+        top: 160px;
+        left: auto;
+        right: 45px;
+        position: absolute;
+        display: inline;
     }
 
-    #header-contact {
-        float: right;
+    nav li {
+        width: auto;
+        padding: 0 15px;
+        border-bottom: none;
+        border-right: 2px solid #CCC;
+        background: none;
+    }
+
+    nav li:last-child {
+        padding-right: 0;
+        border-right: 0;
+    }
+
+    nav li:hover {
+        background: none;
+    }
+
+    nav li:hover > a {
+        color: $purple;
+    }
+
+    nav a {
+        border-bottom: none;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    #logo {
+        float: left;
     }
 }    
