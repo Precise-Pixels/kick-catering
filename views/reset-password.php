@@ -27,15 +27,10 @@
 
         <form method="post">
             <table>
-                <tr>
-                    <td><label for="password">Password:</label></td>
-                    <td><input type="password" name="password" required autofocus/></td>
-                </tr>
+                <tr><td><label for="password">Password:</label></td></tr>
+                <tr><td><input type="password" name="password" required autofocus/></td></tr>
             
-                <tr>
-                    <td></td>
-                    <td><input type="submit" value="RESET" class="btn"/></td>
-                </tr>
+                <tr><td><input type="submit" value="RESET" class="btn"/></td></tr>
             </table>
         </form>
 

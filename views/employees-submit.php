@@ -50,38 +50,26 @@
             <table>
                 <tr><td colspan="2"><h2>Personal Information</h2></td></tr>
 
-                <tr>
-                    <td><label for="name">Full Name:</label></td>
-                    <td><input type="text" name="name" required autofocus/></td>
-                </tr>
+                <tr><td><label for="name">Full Name:</label></td></tr>
+                <tr><td><input type="text" name="name" required autofocus/></td></tr>
 
-                <tr>
-                    <td><label for="address_line_1">Address Line 1:</label></td>
-                    <td><input type="text" name="address_line_1" required/></td>
-                </tr>
+                <tr><td><label for="address_line_1">Address Line 1:</label></td></tr>
+                <tr><td><input type="text" name="address_line_1" required/></td></tr>
 
-                <tr>
-                    <td><label for="address_line_2">Address Line 2 <small>optional</small>:</label></td>
-                    <td><input type="text" name="address_line_2"/></td>
-                </tr>
+                <tr><td><label for="address_line_2">Address Line 2 <small>optional</small>:</label></td></tr>
+                <tr><td><input type="text" name="address_line_2"/></td></tr>
 
-                <tr>
-                    <td><label for="address_city">Town/City:</label></td>
-                    <td><input type="text" name="address_city" required/></td>
-                </tr>
+                <tr><td><label for="address_city">Town/City:</label></td></tr>
+                <tr><td><input type="text" name="address_city" required/></td></tr>
 
-                <tr>
-                    <td><label for="address_county">County:</label></td>
-                    <td><input type="text" name="address_county" required/></td>
-                </tr>
+                <tr><td><label for="address_county">County:</label></td></tr>
+                <tr><td><input type="text" name="address_county" required/></td></tr>
 
-                <tr>
-                    <td><label for="address_postcode">Postcode:</label></td>
-                    <td><input type="text" name="address_postcode" required/></td>
-                </tr>
+                <tr><td><label for="address_postcode">Postcode:</label></td></tr>
+                <tr><td><input type="text" name="address_postcode" required/></td></tr>
 
+                <tr><td><label for="address_country">Country:</label></td></tr>
                 <tr>
-                    <td><label for="address_country">Country:</label></td>
                     <td>
                         <select name="address_country" required>
                             <option value="">--</option>
@@ -328,25 +316,19 @@
                     </td>
                 </tr>
 
-                <tr>
-                    <td><label for="email">Email:</label></td>
-                    <td><input type="email" name="email" required/></td>
-                </tr>
+                <tr><td><label for="email">Email:</label></td></tr>
+                <tr><td><input type="email" name="email" required/></td></tr>
 
-                <tr>
-                    <td><label for="telephone">Telephone:</label></td>
-                    <td><input type="tel" name="telephone" required/></td>
-                </tr>
+                <tr><td><label for="telephone">Telephone:</label></td></tr>
+                <tr><td><input type="tel" name="telephone" required/></td></tr>
 
-                <tr>
-                    <td><label for="cv">CV Upload: <small>Max file size: 2MB, Accepted file types: .doc, .docx, .pdf, .txt, .rtf, .jpg, .png</small></label></td>
-                    <td><input type="file" name="cv" required/></td>
-                </tr>
+                <tr><td><label for="cv">CV Upload: <small>Max file size: 2MB, Accepted file types: .doc, .docx, .pdf, .txt, .rtf, .jpg, .png</small></label></td></tr>
+                <tr><td><input type="file" name="cv" required/></td></tr>
 
                 <tr><td colspan="2"><h2>Looking For</h2></td></tr>
 
+                <tr><td><label for="category">Category of the job:</label></td></tr>
                 <tr>
-                    <td><label for="category">Category of the job:</label></td>
                     <td>
                         <select name="category" required>
                             <option value="">--</option>
@@ -363,18 +345,15 @@
                     </td>
                 </tr>
 
+                <tr><td><label for="location">Location:</label></td></tr>
                 <tr>
-                    <td><label for="location">Location:</label></td>
                     <td>
                         <input type="radio" name="location" id="uk" value="uk" required checked/> <label for="uk">UK</label>
                         <input type="radio" name="location" id="europe" value="europe" required/> <label for="europe">Europe</label>
                     </td>
                 </tr>
 
-                <tr>
-                    <td></td>
-                    <td><input type="submit" value="SUBMIT" class="btn"/></td>
-                </tr>
+                <tr><td><input type="submit" value="SUBMIT" class="btn"/></td></tr>
             </table>
         </form>
 

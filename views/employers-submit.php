@@ -59,31 +59,25 @@
             <table>
                 <tr><td colspan="2"><h2>Listing Information</h2></td></tr>
 
-                <tr>
-                    <td><label for="company_name">Company Name:</label></td>
-                    <td><input type="text" name="company_name" required autofocus/></td>
-                </tr>
+                <tr><td><label for="company_name">Company Name:</label></td></tr>
+                <tr><td><input type="text" name="company_name" required autofocus/></td></tr>
 
-                <tr>
-                    <td><label for="ad_title">Ad Title:</label></td>
-                    <td><input type="text" name="ad_title" required/></td>
-                </tr>
+                <tr><td><label for="ad_title">Ad Title:</label></td></tr>
+                <tr><td><input type="text" name="ad_title" required/></td></tr>
 
-                <tr>
-                    <td><label for="job_description">Job Description:</label></td>
-                    <td><textarea name="job_description" required></textarea></td>
-                </tr>
+                <tr><td><label for="job_description">Job Description:</label></td></tr>
+                <tr><td><textarea name="job_description" required></textarea></td></tr>
 
+                <tr><td><label for="contract_type">Type of Contract:</label></td></tr>
                 <tr>
-                    <td><label for="contract_type">Type of Contract:</label></td>
                     <td>
                         <input type="radio" name="contract_type" id="temporary" value="temporary" required checked/> <label for="temporary">Temporary</label>
                         <input type="radio" name="contract_type" id="permanent" value="permanent" required/> <label for="permanent">Permanent</label>
                     </td>
                 </tr>
 
+                <tr><td><label for="category">Category of the job:</label></td></tr>
                 <tr>
-                    <td><label for="category">Category of the job:</label></td>
                     <td>
                         <select name="category" required>
                             <option value="">--</option>
@@ -100,38 +94,26 @@
                     </td>
                 </tr>
 
-                <tr>
-                    <td><label for="location">Location:</label></td>
-                    <td><input type="text" name="location" required/></td>
-                </tr>
+                <tr><td><label for="location">Location:</label></td></tr>
+                <tr><td><input type="text" name="location" required/></td></tr>
 
-                <tr>
-                    <td><label for="address_line_1">Address Line 1:</label></td>
-                    <td><input type="text" name="address_line_1" required/></td>
-                </tr>
+                <tr><td><label for="address_line_1">Address Line 1:</label></td></tr>
+                <tr><td><input type="text" name="address_line_1" required/></td></tr>
 
-                <tr>
-                    <td><label for="address_line_2">Address Line 2 <small>optional</small>:</label></td>
-                    <td><input type="text" name="address_line_2"/></td>
-                </tr>
+                <tr><td><label for="address_line_2">Address Line 2 <small>optional</small>:</label></td></tr>
+                <tr><td><input type="text" name="address_line_2"/></td></tr>
 
-                <tr>
-                    <td><label for="address_city">Town/City:</label></td>
-                    <td><input type="text" name="address_city" required/></td>
-                </tr>
+                <tr><td><label for="address_city">Town/City:</label></td></tr>
+                <tr><td><input type="text" name="address_city" required/></td></tr>
 
-                <tr>
-                    <td><label for="address_county">County:</label></td>
-                    <td><input type="text" name="address_county" required/></td>
-                </tr>
+                <tr><td><label for="address_county">County:</label></td></tr>
+                <tr><td><input type="text" name="address_county" required/></td></tr>
 
-                <tr>
-                    <td><label for="address_postcode">Postcode:</label></td>
-                    <td><input type="text" name="address_postcode" required/></td>
-                </tr>
+                <tr><td><label for="address_postcode">Postcode:</label></td></tr>
+                <tr><td><input type="text" name="address_postcode" required/></td></tr>
 
+                <tr><td><label for="address_country">Country:</label></td></tr>
                 <tr>
-                    <td><label for="address_country">Country:</label></td>
                     <td>
                         <select name="address_country" required>
                             <option value="">--</option>
@@ -378,32 +360,21 @@
                     </td>
                 </tr>
 
-                <tr>
-                    <td><label for="website">Website:</label></td>
-                    <td><input type="url" name="website" required/></td>
-                </tr>
+                <tr><td><label for="website">Website:</label></td></tr>
+                <tr><td><input type="url" name="website" required/></td></tr>
 
                 <tr><td colspan="2"><h2>Contact Information</h2></td></tr>
 
-                <tr>
-                    <td><label for="name">Full Name:</label></td>
-                    <td><input type="text" name="name" required/></td>
-                </tr>
+                <tr><td><label for="name">Full Name:</label></td></tr>
+                <tr><td><input type="text" name="name" required/></td></tr>
 
-                <tr>
-                    <td><label for="email">Email:</label></td>
-                    <td><input type="email" name="email" required/></td>
-                </tr>
+                <tr><td><label for="email">Email:</label></td></tr>
+                <tr><td><input type="email" name="email" required/></td></tr>
 
-                <tr>
-                    <td><label for="telephone">Telephone:</label></td>
-                    <td><input type="tel" name="telephone" required/></td>
-                </tr>
+                <tr><td><label for="telephone">Telephone:</label></td></tr>
+                <tr><td><input type="tel" name="telephone" required/></td></tr>
 
-                <tr>
-                    <td></td>
-                    <td><input type="submit" value="SUBMIT" class="btn"/></td>
-                </tr>
+                <tr><td><input type="submit" value="SUBMIT" class="btn"/></td></tr>
             </table>
         </form>
 

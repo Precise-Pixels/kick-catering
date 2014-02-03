@@ -56,13 +56,8 @@ input:focus {
 }
 
 @media ($min_bp_a) {
-    input[type=text],
-    input[type=email],
-    input[type=password] {
-        width: 90%;
-    }
-
-    input[type=submit] {
+    #login-form input,
+    #register-form input {
         width: 90%;
     }
 }
