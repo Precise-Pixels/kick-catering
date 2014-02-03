@@ -28,7 +28,7 @@
             
                 <tr>
                     <td></td>
-                    <td><input type="submit" value="Resend"/></td>
+                    <td><input type="submit" value="RESEND" class="btn"/></td>
                 </tr>
             </table>
         </form>

@@ -402,7 +402,7 @@
 
                 <tr>
                     <td></td>
-                    <td><input type="submit" value="Submit"/></td>
+                    <td><input type="submit" value="SUBMIT" class="btn"/></td>
                 </tr>
             </table>
         </form>

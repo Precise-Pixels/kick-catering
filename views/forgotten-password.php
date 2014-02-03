@@ -34,7 +34,7 @@
 
                 <tr>
                     <td></td>
-                    <td><input type="submit" value="Reset"/></td>
+                    <td><input type="submit" value="RESET" class="btn"/></td>
                 </tr>
             </table>
         </form>
