@@ -20,7 +20,7 @@
         if(!empty($_POST['login-submit'])) {
             if(!empty($_POST['email']) && !empty($_POST['password'])) {
                 $response = $login_system->login($_POST['email'], $_POST['password']);
-                echo $wrap_start . $response . $wrap_end;
+                echo $response;
             } else {
                 echo $wrap_start . 'Please enter your email and password.' . $wrap_end;
             }
@@ -40,7 +40,7 @@
                         echo $wrap_start . 'An account with this email already exists.' . $wrap_end;
                     } else {
                         $response = $login_system->create_user($email, $password);
-                        echo $wrap_start . $response . $wrap_end;
+                        echo $response;
                     }
                 } else {
                     echo $wrap_start . 'Email and/or password did not match. Please try again.' . $wrap_end;

@@ -10,6 +10,42 @@
 
         <h1>Employees Submit</h1>
 
+        <?php
+        require_once('php/RecruitmentPlatform.php');
+        $recruitment_platform = new RecruitmentPlatform();
+
+        if($_POST) {
+            $name             = $_POST['name'];
+            $address_line_1   = $_POST['address_line_1'];
+            $address_line_2   = $_POST['address_line_2'];
+            $address_city     = $_POST['address_city'];
+            $address_county   = $_POST['address_county'];
+            $address_postcode = $_POST['address_postcode'];
+            $address_country  = $_POST['address_country'];
+            $email            = $_POST['email'];
+            $telephone        = $_POST['telephone'];
+            $category         = $_POST['category'];
+            $location         = $_POST['location'];
+
+            if( !empty($name) &&
+                !empty($address_line_1) &&
+                !empty($address_city) &&
+                !empty($address_county) &&
+                !empty($address_postcode) &&
+                !empty($address_country) &&
+                !empty($email) &&
+                !empty($telephone) &&
+                !empty($_FILES['cv']) &&
+                !empty($category) &&
+                !empty($location) ) {
+                $response = $recruitment_platform->employees_submit($name, $address_line_1, $address_line_2, $address_city, $address_county, $address_postcode, $address_country, $email, $telephone, $category, $location);
+                echo $response;
+            } else {
+                echo '<p class="full error">Please fill out all the fields.</p>';
+            }
+        }
+        ?>
+
         <form enctype="multipart/form-data" method="post">
             <table>
                 <tr><td colspan="2"><h2>Personal Information</h2></td></tr>
@@ -330,7 +366,7 @@
                 <tr>
                     <td><label for="location">Location:</label></td>
                     <td>
-                        <input type="radio" name="location" id="uk" value="uk" required/> <label for="uk">UK</label>
+                        <input type="radio" name="location" id="uk" value="uk" required checked/> <label for="uk">UK</label>
                         <input type="radio" name="location" id="europe" value="europe" required/> <label for="europe">Europe</label>
                     </td>
                 </tr>
@@ -344,39 +380,3 @@
 
     </div>
 </section>
-
-<?php
-require_once('php/RecruitmentPlatform.php');
-$recruitment_platform = new RecruitmentPlatform();
-
-if($_POST) {
-    $name             = $_POST['name'];
-    $address_line_1   = $_POST['address_line_1'];
-    $address_line_2   = $_POST['address_line_2'];
-    $address_city     = $_POST['address_city'];
-    $address_county   = $_POST['address_county'];
-    $address_postcode = $_POST['address_postcode'];
-    $address_country  = $_POST['address_country'];
-    $email            = $_POST['email'];
-    $telephone        = $_POST['telephone'];
-    $category         = $_POST['category'];
-    $location         = $_POST['location'];
-
-    if( !empty($name) &&
-        !empty($address_line_1) &&
-        !empty($address_city) &&
-        !empty($address_county) &&
-        !empty($address_postcode) &&
-        !empty($address_country) &&
-        !empty($email) &&
-        !empty($telephone) &&
-        !empty($_FILES['cv']) &&
-        !empty($category) &&
-        !empty($location) ) {
-        $response = $recruitment_platform->employees_submit($name, $address_line_1, $address_line_2, $address_city, $address_county, $address_postcode, $address_country, $email, $telephone, $category, $location);
-        echo $response;
-    } else {
-        echo 'Please fill out all the fields.';
-    }
-}
-?>

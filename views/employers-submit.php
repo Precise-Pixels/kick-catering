@@ -10,6 +10,51 @@
 
         <h1>Employers Submit</h1>
 
+        <?php
+        require_once('php/RecruitmentPlatform.php');
+        $recruitment_platform = new RecruitmentPlatform();
+
+        if($_POST) {
+            $company_name     = $_POST['company_name'];
+            $ad_title         = $_POST['ad_title'];
+            $job_description  = $_POST['job_description'];
+            $contract_type    = $_POST['contract_type'];
+            $category         = $_POST['category'];
+            $location         = $_POST['location'];
+            $address_line_1   = $_POST['address_line_1'];
+            $address_line_2   = $_POST['address_line_2'];
+            $address_city     = $_POST['address_city'];
+            $address_county   = $_POST['address_county'];
+            $address_postcode = $_POST['address_postcode'];
+            $address_country  = $_POST['address_country'];
+            $website          = $_POST['website'];
+            $name             = $_POST['name'];
+            $email            = $_POST['email'];
+            $telephone        = $_POST['telephone'];
+
+            if( !empty($company_name) &&
+                !empty($ad_title) &&
+                !empty($job_description) &&
+                !empty($contract_type) &&
+                !empty($category) &&
+                !empty($location) &&
+                !empty($address_line_1) &&
+                !empty($address_city) &&
+                !empty($address_county) &&
+                !empty($address_postcode) &&
+                !empty($address_country) &&
+                !empty($website) &&
+                !empty($name) &&
+                !empty($email) &&
+                !empty($telephone) ) {
+                $response = $recruitment_platform->employers_submit($company_name, $ad_title, $job_description, $contract_type, $category, $location, $address_line_1, $address_line_2, $address_city, $address_county, $address_postcode, $address_country, $website, $name, $email, $telephone);
+                echo $response;
+            } else {
+                echo '<p class="full error">Please fill out all the fields.</p>';
+            }
+        }
+        ?>
+
         <form method="post">
             <table>
                 <tr><td colspan="2"><h2>Listing Information</h2></td></tr>
@@ -32,7 +77,7 @@
                 <tr>
                     <td><label for="contract_type">Type of Contract:</label></td>
                     <td>
-                        <input type="radio" name="contract_type" id="temporary" value="temporary" required/> <label for="temporary">Temporary</label>
+                        <input type="radio" name="contract_type" id="temporary" value="temporary" required checked/> <label for="temporary">Temporary</label>
                         <input type="radio" name="contract_type" id="permanent" value="permanent" required/> <label for="permanent">Permanent</label>
                     </td>
                 </tr>
@@ -364,48 +409,3 @@
 
     </div>
 </section>
-
-<?php
-require_once('php/RecruitmentPlatform.php');
-$recruitment_platform = new RecruitmentPlatform();
-
-if($_POST) {
-    $company_name     = $_POST['company_name'];
-    $ad_title         = $_POST['ad_title'];
-    $job_description  = $_POST['job_description'];
-    $contract_type    = $_POST['contract_type'];
-    $category         = $_POST['category'];
-    $location         = $_POST['location'];
-    $address_line_1   = $_POST['address_line_1'];
-    $address_line_2   = $_POST['address_line_2'];
-    $address_city     = $_POST['address_city'];
-    $address_county   = $_POST['address_county'];
-    $address_postcode = $_POST['address_postcode'];
-    $address_country  = $_POST['address_country'];
-    $website          = $_POST['website'];
-    $name             = $_POST['name'];
-    $email            = $_POST['email'];
-    $telephone        = $_POST['telephone'];
-
-    if( !empty($company_name) &&
-        !empty($ad_title) &&
-        !empty($job_description) &&
-        !empty($contract_type) &&
-        !empty($category) &&
-        !empty($location) &&
-        !empty($address_line_1) &&
-        !empty($address_city) &&
-        !empty($address_county) &&
-        !empty($address_postcode) &&
-        !empty($address_country) &&
-        !empty($website) &&
-        !empty($name) &&
-        !empty($email) &&
-        !empty($telephone) ) {
-        $response = $recruitment_platform->employers_submit($company_name, $ad_title, $job_description, $contract_type, $category, $location, $address_line_1, $address_line_2, $address_city, $address_county, $address_postcode, $address_country, $website, $name, $email, $telephone);
-        echo $response;
-    } else {
-        echo 'Please fill out all the fields.';
-    }
-}
-?>

@@ -1,6 +1,9 @@
 <?php
 
 class LoginSystem {
+    private $wrap_start = '<p class="full error">';
+    private $wrap_end   = '</p>';
+
     function login($email, $password) {
         require_once('db.php');
         require_once('php/Encryption.php');
@@ -18,15 +21,15 @@ class LoginSystem {
                     $_SESSION['status']     = 'loggedin';
                     $_SESSION['user_id']    = $row->id;
                     $_SESSION['user_email'] = $email;
-                    (isset($_GET['r']) ? header("location:" . $_GET['r']) : header('location: recruitment-platform'));
+                    header('location: /');
                 } else {
-                    return 'Wrong email and/or password.';
+                    return $this->wrap_start . 'Wrong email and/or password.' . $this->wrap_end;
                 }
             } else {
-                return 'Please verify your account by clicking the verification link in your email before attempting to log in. If you have not receive a verification email, please check your spam/junk or <a href="resend-validation-email">request another verification email</a>.';
+                return $this->wrap_start . 'Please verify your account by clicking the verification link in your email before attempting to log in. If you have not receive a verification email, please check your spam/junk or <a href="resend-validation-email">request another verification email</a>.' . $this->wrap_end;
             }
         } else {
-            return 'Wrong email and/or password.';
+            return $this->wrap_start . 'Wrong email and/or password.' . $this->wrap_end;
         }
     }
 
@@ -34,9 +37,7 @@ class LoginSystem {
         unset($_SESSION['status']);
         unset($_SESSION['user_id']);
         unset($_SESSION['user_email']);
-        $referer = parse_url($_SERVER['HTTP_REFERER']);
-        $referer_path = $referer['path'];
-        header("location: $referer_path");
+        header('location: /');
     }
 
     function create_user($email, $password) {
@@ -58,7 +59,7 @@ class LoginSystem {
         $mail_client = new MailClient();
         $mail_client->send_msg($email, 'Verify your Kick Catering account', "Please follow this link to verify your Kick Catering account: http://kickcatering.co.uk/beta/verify-account?e=$email&r=$rand1");
 
-        return 'Account successfully created. We have sent a verification link to your email. Please verify your account before attempting to log in. If you have not receive a verification email, please check your spam/junk or <a href="resend-validation-email">request another verification email</a>.';
+        return $this->wrap_start . 'Account successfully created. We have sent a verification link to your email. Please verify your account before attempting to log in. If you have not receive a verification email, please check your spam/junk or <a href="resend-validation-email">request another verification email</a>.' . $this->wrap_end;
     }
 
     function resend_validation_email($email) {
@@ -73,7 +74,7 @@ class LoginSystem {
         $mail_client = new MailClient();
         $mail_client->send_msg($email, 'Verify your Kick Catering account', "Please follow this link to verify your Kick Catering account: http://kickcatering.co.uk/beta/verify-account?e=$email&r=$rand");
 
-        return 'We have sent a verification link to your email. Please verify your account before attempting to log in.';
+        return $this->wrap_start . 'We have sent a verification link to your email. Please verify your account before attempting to log in.' . $this->wrap_end;
     }
 
     function validate_user($email, $rand) {
@@ -83,12 +84,14 @@ class LoginSystem {
         $STH->setFetchMode(PDO::FETCH_OBJ);
         $result = $STH->fetch();
 
-        if($result->validate_rand == $rand) {
-            $STH = $DBH->prepare("UPDATE users SET valid=1 WHERE email='$email'");
-            $STH->execute();
-            return true;
-        } else {
-            return false;
+        if($result) {
+            if($result->validate_rand == $rand) {
+                $STH = $DBH->prepare("UPDATE users SET valid=1 WHERE email='$email'");
+                $STH->execute();
+                return true;
+            } else {
+                return false;
+            }
         }
     }
 
@@ -114,7 +117,7 @@ class LoginSystem {
         $mail_client = new MailClient();
         $mail_client->send_msg($email, 'Reset your Kick Catering account password', "Please follow this link to reset your Kick Catering account password: http://kickcatering.co.uk/beta/reset-password?e=$email&r=$rand");
 
-        return 'We have sent instructions on how to reset your password to your email. Please check your emails.';
+        return $this->wrap_start . 'We have sent instructions on how to reset your password to your email. Please check your emails.' . $this->wrap_end;
     }
 
     function reset_password($email, $password, $rand) {
@@ -135,9 +138,9 @@ class LoginSystem {
             $STH = $DBH->prepare("UPDATE users SET password='$password_e', reset_rand='$new_rand' WHERE email='$email'");
             $STH->execute();
 
-            return 'Password successfully reset. Please <a href="login">login</a>.';
+            return $this->wrap_start . 'Password successfully reset. Please <a href="login">login</a>.' . $this->wrap_end;
         } else {
-            return 'This link has expired. Please <a href="forgotten-password">request a new password reset link</a>.';
+            return $this->wrap_start . 'This link has expired. Please <a href="forgotten-password">request a new password reset link</a>.' . $this->wrap_end;
         }
     }
 
