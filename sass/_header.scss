@@ -1,3 +1,31 @@
+.social {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+}
+
+.twitter {
+    top: 10px;
+    right: 70px;
+    background-image: url(../img/twitter-icon.jpg);
+    transition: 0.5s;
+}
+
+.facebook  {
+    top: 10px;
+    right: 100px;
+    background-image: url(../img/facebook-icon.jpg);
+    transition: 0.5s;
+}
+
+.twitter:hover {
+    background-image: url(../img/twitter-icon-rollover.jpg);
+}
+
+.facebook:hover {
+    background-image: url(../img/facebook-icon-rollover.jpg);
+}
+
 #login-btn {
     position: absolute;
     top: 10px;
@@ -97,6 +125,62 @@ nav a:hover {
     border-bottom: 0;
 }
 
+@media ($min_bp_a) {
+
+    .twitter {
+        top: 40px;
+        right: 100px;
+    }
+
+    .facebook  {
+        top: 40px;
+        right: 130px;
+    }
+
+    #login-btn {
+        top: 40px;
+        right: 45px;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    nav {
+        width: 515px;
+        top: auto;
+        margin: 0 auto;
+        position: relative;
+        display: block;
+    }
+
+    nav li {
+        width: auto;
+        padding: 0 15px;
+        border-bottom: none;
+        border-right: 2px solid #CCC;
+        background: none;
+    }
+
+    nav li:last-child {
+        padding-right: 0;
+        border-right: 0;
+    }
+
+    nav li:hover {
+        background: none;
+    }
+
+    nav li:hover > a {
+        color: $purple;
+    }
+
+    nav a {
+        border-bottom: none;
+        font-size: 18px;
+    }
+}
+
 @media ($min_bp_b) {
     #login-btn {
         top: 40px;
@@ -124,33 +208,6 @@ nav a:hover {
         right: 45px;
         position: absolute;
         display: inline;
-    }
-
-    nav li {
-        width: auto;
-        padding: 0 15px;
-        border-bottom: none;
-        border-right: 2px solid #CCC;
-        background: none;
-    }
-
-    nav li:last-child {
-        padding-right: 0;
-        border-right: 0;
-    }
-
-    nav li:hover {
-        background: none;
-    }
-
-    nav li:hover > a {
-        color: $purple;
-    }
-
-    nav a {
-        border-bottom: none;
-        font-size: 20px;
-        font-weight: 700;
     }
 
     #logo {

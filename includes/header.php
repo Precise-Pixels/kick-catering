@@ -1,5 +1,7 @@
 <header>
     <div class="header-padding align-centre">
+        <a href="#"><div class="social facebook"></div></a>
+        <a href="#"><div class="social twitter"></div></a>
         <?php require_once('loginout_button.php'); ?>
         <img id="logo" src="img/logo.png"/>
         <input type="checkbox" id="menu-toggle"/>
