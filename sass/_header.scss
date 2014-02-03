@@ -8,14 +8,14 @@
     top: 10px;
     right: 70px;
     background-image: url(../img/twitter-icon.jpg);
-    transition: 0.5s;
+    transition: background 0.5s;
 }
 
 .facebook  {
     top: 10px;
     right: 100px;
     background-image: url(../img/facebook-icon.jpg);
-    transition: 0.5s;
+    transition: background 0.5s;
 }
 
 .twitter:hover {
@@ -42,87 +42,18 @@ header {
     padding: 40px 45px;
 }
 
+#logo {
+    border-bottom: 0;
+}
+
 #header-contact {
     color: #999;
 }
 
-#menu-toggle {
-    display: none;
-}
-
-#menu-toggle:checked ~ nav {
-    top: 0;
-    display: block;
-}
-
-#menu-toggle:checked ~ #menu-btn {
-    position: fixed;
-    top: 320px;
-}
-
-#menu-toggle:checked ~ #nav-fade-out {
-    display: block;
-}
-
-#menu-btn {
-    width: 45px;
-    height: 45px;
-    padding: 20px;      
+#login-btn {
     position: absolute;
     top: 10px;
-    left: 10px;
-    cursor: pointer;
-    background: #CCC;
-}
-
-#nav-fade-out {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: .6;
-    display: none;
-    background: #000;
-}
-
-nav {
-    width: 100%; 
-    position: fixed;
-    top: -315px;
-    left: 0;
-    display: none;
-}
-
-nav ul {
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    width: 100%;
-    float: left;
-    list-style: none;
-    padding: 20px;
-    border-bottom: 2px solid #CCC;
-    background: #EEE;
-}
-
-nav li:hover {
-    background: $purple;
-}
-
-nav li:hover > a {
-    color: #EEE;
-}
-
-nav a {
-    text-decoration: none;
-    color: #222;
-}
-
-nav a:hover {
-    border-bottom: 0;
+    right: 10px;
 }
 
 @media ($min_bp_a) {
@@ -182,6 +113,10 @@ nav a:hover {
 }
 
 @media ($min_bp_b) {
+    header {
+        text-align: left;
+    }
+
     #login-btn {
         top: 40px;
         right: 45px;
@@ -213,4 +148,10 @@ nav a:hover {
     #logo {
         float: left;
     }
-}    
+
+    #login-btn {
+        top: 40px;
+        right: 45px;
+
+    }
+}
