@@ -51,7 +51,7 @@
         }
         ?>
 
-        <form method="post" class="third">
+        <form method="post" id="login-form" class="third active">
             <h1>Login</h1>
             <table>
                 <tr><td><label for="email">Email:</label></td></tr>
@@ -65,7 +65,7 @@
             <p><a href="forgotten-password">Forgotten your password</a></p>
         </form>
 
-        <form method="post" class="third">
+        <form method="post" id="register-form" class="third">
             <h1>Register</h1>
             <table>
                 <tr><td><label for="email">Email:</label></td></tr>
