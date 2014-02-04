@@ -1,25 +1,33 @@
-.half {
+.full,
+.half,
+.third,
+.quarter {
     width: (100%/1);
     float: left;
 }
 
-.quarter {
-    width: (100%/1);
+.half:last-child {
+    float: right;
 }
 
 @media ($min-bp-a) {
-    .half {
-        width: (100%/2);
+    .half,
+    .quarter {
+        width: (96%/2);
     }
 
-    .quarter {
-        width: (100%/2);
+    .third {
+        width: (100%/3);
     }
 }
 
 @media ($min-bp-b) {
     .half {
-        width: (100%/2);
+        width: (96%/2);
+    }
+
+    .third {
+        width: (100%/3);
     }
 
     .quarter {
@@ -29,7 +37,11 @@
 
 @media ($min-bp-c) {
     .half {
-        width: (100%/2);
+        width: (96%/2);
+    }
+
+    .third {
+        width: (100%/3);
     }
 
     .quarter {

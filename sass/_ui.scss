@@ -1,0 +1,84 @@
+.btn {
+    padding: 10px 25px;
+    border: 0;
+    cursor: pointer;
+    color: #FFF;
+    font-weight: 600;
+    background: $purple;
+}
+
+.btn:hover {
+    background: #222;
+}
+
+form {
+    padding: 20px 0;
+}
+
+#login-form:not(.hover),
+#register-form:not(.hover), {
+    opacity: .4;
+}
+
+#login-form.active,
+#register-form.active {
+    opacity: 1;
+}
+
+table {
+    width: 100%;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+input[type=file]::-webkit-file-upload-button {
+    border: 0;
+    color: #FFF;
+    margin: 0;
+    padding: 0 20px 0 0;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: 0;
+}
+
+input[type=file]::-ms-browse {
+    border: 0;
+    color: #FFF;
+    margin: 0;
+    padding: 0 20px 0;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: 0;
+}
+
+input[type=radio] {
+    width: auto;
+}
+
+input[type=submit] {
+    margin-top: 15px;
+}
+
+label {
+    font-weight: 800;
+}
+
+textarea {
+    height: 100px;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline-color: #999;
+}

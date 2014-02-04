@@ -6,7 +6,7 @@ h1 {
     color: $purple;
 }
 
-h2 { 
+h2 {
     font-size: 18px; 
     font-weight: 600;
 }
@@ -26,8 +26,8 @@ blockquote {
 
 blockquote:before {
     content: open-quote;
-    line-height: 0.1em;
     margin-right: 14px;
+    line-height: 0.1em;
     vertical-align: -0.4em;
     font-size: 60px;
     font-weight: 600;
@@ -44,4 +44,10 @@ a {
 a:hover {
     border-bottom: 1px solid $purple;
     color: $purple;
+}
+
+.error {
+    padding: 15px;
+    vertical-align: middle;
+    background: $error;
 }

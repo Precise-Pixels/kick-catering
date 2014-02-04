@@ -1,33 +1,40 @@
-<h1>RESET PASSWORD</h1>
+<section class="l-grey">
+    <div class="section-padding align-centre">
 
-<form method="post">
-    <table>
-        <tr>
-            <td><label for="password">Password:</label></td>
-            <td><input type="password" name="password" required autofocus/></td>
-        </tr>
-    
-        <tr>
-            <td></td>
-            <td><input type="submit" value="Reset"/></td>
-        </tr>
-    </table>
-</form>
+        <h1>Reset Password</h1>
 
-<?php
-require_once('php/LoginSystem.php');
-$login_system = new LoginSystem();
+        <?php
+        if(!isset($_GET['e']) || !isset($_GET['r'])) {
+            header('location: /');
+        }
 
-if($_POST) {
-    $email    = $_GET['e'];
-    $rand     = $_GET['r'];
-    $password = $_POST['password'];
+        require_once('php/LoginSystem.php');
+        $login_system = new LoginSystem();
 
-    if(!empty($password)) {
-        $response = $login_system->reset_password($email, $password, $rand);
-        echo $response;
-    } else {
-        echo 'Please enter your new password.';
-    }
-}
-?>
+        if($_POST) {
+            $email    = $_GET['e'];
+            $rand     = $_GET['r'];
+            $password = $_POST['password'];
+
+            if(!empty($password)) {
+                $response = $login_system->reset_password($email, $password, $rand);
+                echo $response;
+            } else {
+                echo '<p class="full error">Please enter your new password.</a>';
+            }
+        }
+        ?>
+
+        <form method="post" class="half">
+            <table>
+                <tr><td><label for="password">Password:</label></td></tr>
+                <tr><td><input type="password" name="password" required autofocus/></td></tr>
+            
+                <tr><td><input type="submit" value="RESET" class="btn"/></td></tr>
+            </table>
+        </form>
+
+        <p class="half">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, porro, ex maiores amet dolore cum vitae aut quos! Architecto, et illo vel facilis repellendus inventore labore explicabo assumenda exercitationem sit.</p>
+
+    </div>
+</section>

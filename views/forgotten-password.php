@@ -1,37 +1,40 @@
-<h1>FORGOTTEN YOUR PASSWORD</h1>
+<section class="l-grey">
+    <div class="section-padding align-centre">
 
-<form method="post">
-    <table>
-        <tr>
-            <td><label for="email">Email:</label></td>
-            <td><input type="email" name="email" required autofocus/></td>
-        </tr>
+        <h1>Forgotten Your Password</h1>
 
-        <tr>
-            <td></td>
-            <td><input type="submit" value="Reset"/></td>
-        </tr>
-    </table>
-</form>
+        <?php
+        require_once('php/LoginSystem.php');
+        $login_system = new LoginSystem();
 
-<?php
-require_once('php/LoginSystem.php');
-$login_system = new LoginSystem();
+        if($_POST) {
+            $email = $_POST['email'];
 
-if($_POST) {
-    $email = $_POST['email'];
+            if(!empty($email)) {
+                $exists = $login_system->check_user_exists($email);
 
-    if(!empty($email)) {
-        $exists = $login_system->check_user_exists($email);
-
-        if($exists) {
-            $response = $login_system->send_reset_password_link($email);
-            echo $response;
-        } else {
-            echo 'No account with this email exists.';
+                if($exists) {
+                    $response = $login_system->send_reset_password_link($email);
+                    echo $response;
+                } else {
+                    echo '<p class="full error">No account with this email exists.</p>';
+                }
+            } else {
+                echo '<p class="full error">Please enter your email.</p>';
+            }
         }
-    } else {
-        echo 'Please enter your email.';
-    }
-}
-?>
+        ?>
+
+        <form method="post" class="half">
+            <table>
+                <tr><td><label for="email">Email:</label></td></tr>
+                <tr><td><input type="email" name="email" required autofocus/></td></tr>
+
+                <tr><td><input type="submit" value="RESET" class="btn"/></td></tr>
+            </table>
+        </form>
+
+        <p class="half">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, porro, ex maiores amet dolore cum vitae aut quos! Architecto, et illo vel facilis repellendus inventore labore explicabo assumenda exercitationem sit.</p>
+
+    </div>
+</section>
