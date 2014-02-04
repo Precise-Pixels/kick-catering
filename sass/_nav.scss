@@ -9,7 +9,7 @@
 
 #menu-toggle:checked ~ #menu-btn {
     position: fixed;
-    top: 320px;
+    top: 330px;
 }
 
 #menu-toggle:checked ~ #nav-fade-out {
@@ -17,15 +17,12 @@
 }
 
 #menu-btn {
-    width: 45px;
-    height: 45px;
-    padding: 20px;      
+    width: 40px;
+    padding: 0;
     position: absolute;
     top: 10px;
     left: 10px;
     z-index: 3;
-    cursor: pointer;
-    background: #CCC;
 }
 
 #nav-fade-out {
@@ -34,7 +31,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    opacity: .6;
+    opacity: .9;
     display: none;
     z-index: 1;
     background: #000;
@@ -58,26 +55,24 @@ nav li {
     width: 100%;
     float: left;
     list-style: none;
-    padding: 20px;
-    border-bottom: 2px solid #CCC;
-    background: #EEE;
-}
-
-nav li:hover {
-    background: $purple;
-}
-
-nav li:hover > a {
-    color: #EEE;
 }
 
 nav a {
+    width: 100%;
+    padding: 20px;
+    border-bottom: 2px solid #CCC;
+    display: block;
     text-decoration: none;
     color: #222;
+    font-size: 18px;
+    font-weight: 700;
+    background: #EEE;
 }
 
 nav a:hover {
-    border-bottom: 0;
+    color: #EEE;
+    border-bottom: 2px solid #CCC;
+    background: $purple;
 }
 
 @media ($min_bp_a) {
@@ -88,44 +83,41 @@ nav a:hover {
 
     nav {
         width: auto;
-        height: auto;
         position: relative;
         top: auto;
-        margin: 10px auto 0 auto;
+        margin: 10px auto 0;
         display: inline-block;
     }
 
     nav li {
         width: auto;
-        padding: 0 15px;
-        border-bottom: none;
         border-right: 2px solid #CCC;
-        background: none;
     }
 
     nav li:last-child {
         border-right: 0;
     }
 
-    nav li:hover {
+    nav a {
+        width: auto;
+        padding: 0 15px;
+        border-bottom: none;
         background: none;
     }
 
-    nav li:hover > a {
-        color: $purple;
+    nav a:hover {
+        background: none;
+        border-bottom: none;
     }
 
-    nav a {
-        border-bottom: none;
-        font-size: 18px;
-        font-weight: 700;
+    nav a:hover {
+        color: $purple;
     }
 }
 
 @media ($min_bp_b) {
 
     nav {
-        width: auto;
         position: absolute;
         top: 160px;
         left: auto;
@@ -133,7 +125,7 @@ nav a:hover {
         margin: 0;
     }
 
-    nav li:last-child {
+    nav li:last-child a {
         padding-right: 0;
     }
 }

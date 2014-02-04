@@ -25,7 +25,7 @@ blockquote {
 }
 
 blockquote:before {
-    content: open-quote;
+    content: '"';
     margin-right: 14px;
     line-height: 0.1em;
     vertical-align: -0.4em;
