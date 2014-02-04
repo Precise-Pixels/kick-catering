@@ -1,8 +1,8 @@
 <section id="homepage-feature">
     <div class="feature-content align-centre">
         <div class="feature-buttons">
-            <p>Looking for work?</p>
-            <p>Require a chef?</p>
+            <a href="#" class="btn">Looking for work?</a>
+            <a href="#" class="btn">Require a chef?</a>
         </div>
         <img src="/img/top-pic.jpg">
     </div>
