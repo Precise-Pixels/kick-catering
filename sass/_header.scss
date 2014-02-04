@@ -1,3 +1,29 @@
+.social {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+}
+
+.twitter {
+    top: 10px;
+    right: 70px;
+    background: url(../img/sprite-sheet.svg) 0px 0px;
+}
+
+.facebook  {
+    top: 10px;
+    right: 100px;
+    background: url(../img/sprite-sheet.svg) -20px 0px;
+}
+
+.twitter:hover {
+    background: url(../img/sprite-sheet.svg) 0px -20px;
+}
+
+.facebook:hover {
+    background: url(../img/sprite-sheet.svg) -20px -20px;
+}
+
 #login-btn {
     position: absolute;
     top: 10px;
@@ -6,113 +32,81 @@
 
 header {
     height: auto;
+    position: relative;
     text-align: center;
 }
 
+
 .header-padding {
-    padding: 40px 45px 40px 45px;
+    position: relative;
+    padding: 40px 45px;
 }
 
-#menu-toggle {
-  display: none;
+#logo {
+    border-bottom: 0;
 }
 
-#menu-toggle:checked ~ nav {
-    top: 0;
-    opacity: 1;
-    overflow: static;
+#header-contact {
+    color: #999;
 }
 
-#menu-toggle:checked ~ #menu-btn {
-    position: fixed;
-    top: 320px;
-}
-
-#menu-toggle:checked ~ #nav-fade-out {
-    opacity: 0.6;
-    visibility: visible;
-}
-
-#menu-btn {
-    width: 45px;
-    height: 45px;
-    padding: 20px;      
+#login-btn {
     position: absolute;
     top: 10px;
-    left: 10px;
-    cursor: pointer;
-    background: #CCC;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    z-index: 9999 !important;
+    right: 10px;
 }
 
-#nav-fade-out {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    background: #000;
+#header-arrows {
+   width: 100%; 
+   height: 5px;
+   position: absolute;
+   bottom: -5px;
+   left: 0;
+   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTU1RDQ0ODQ4RDMzMTFFMzk1RjlBNDZFQ0Q5MjQ3QzYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTU1RDQ0ODU4RDMzMTFFMzk1RjlBNDZFQ0Q5MjQ3QzYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFNTVENDQ4MjhEMzMxMUUzOTVGOUE0NkVDRDkyNDdDNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFNTVENDQ4MzhEMzMxMUUzOTVGOUE0NkVDRDkyNDdDNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlOda50AAAA7SURBVHjaYvj//3/jf8KgmQFIgHATHkUtIDUwhbgUt8DkkRWCcDOSolZkOUawalTQAsRMQFyFLAgQYAAx5JOLaH3J2AAAAABJRU5ErkJggg==) center;
+   z-index: 1;
 }
 
-nav {
-    width: 100%; 
-    position: fixed;
-    top: -315px;
-    left: 0;
-    opacity: 0;
-    margin: 0 auto;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    z-index: 9999 !important;
-}
+@media ($min_bp_a) {
 
-nav ul {
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    overflow: hidden;
-    padding: 0;
-    margin: 0 auto;
-    list-style: none;
-    text-decoration: none;
-}
+    .twitter {
+        top: 40px;
+        right: 100px;
+    }
 
-li {
-    width: 100%;
-    float: left;
-    list-style: none;
-    padding: 20px;  
-    border-bottom: 2px solid #CCC;
-    background: #EEE;
-}
+    .facebook  {
+        top: 40px;
+        right: 130px;
+    }
 
-li:hover {
-    background: $purple;
-}
-
-li:hover > a {
-    color: #EEE;
-}
-
-nav li a {
-    text-decoration: none;
-    color: #222;
-}
-
-@media ($min_bp_b) {
+    #login-btn {
+        top: 40px;
+        right: 45px;
+    }
 
     #menu-btn {
         display: none;
     }
-} 
+}
 
-@media ($min_bp_c) {
+@media ($min_bp_b) {
+    header {
+        text-align: left;
+    }
+
+    #login-btn {
+        top: 40px;
+        right: 45px;
+    }
+
+    #header-contact {
+        position: absolute;
+        top: 100px;
+        right: 45px;
+    }
+
+    #menu-btn {
+        display: none;
+    }
 
     header {
         text-align: left;
@@ -122,7 +116,9 @@ nav li a {
         float: left;
     }
 
-    #header-contact {
-        float: right;
+    #login-btn {
+        top: 40px;
+        right: 45px;
+
     }
-}    
+}

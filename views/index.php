@@ -1,5 +1,9 @@
-<section id="image-gallery">
-    <div class="align-centre">
+<section id="homepage-feature">
+    <div class="feature-content align-centre">
+        <div class="feature-buttons">
+            <p>Looking for work?</p>
+            <p>Require a chef?</p>
+        </div>
         <img src="/img/top-pic.jpg">
     </div>
 </section>
