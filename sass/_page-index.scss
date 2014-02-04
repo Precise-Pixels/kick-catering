@@ -1,15 +1,42 @@
 // If we need to use page-by-page styles, bodyclass.php will need to be imported in front_view.php
-#image-gallery {
+#homepage-feature {
     width: 100%;
     height: auto;
+    position: relative;
     margin: 0 auto;
     text-align: center;
-    background: $purple;
-    img {
+    background: url(../img/top-pic-l.jpg) left no-repeat,
+                url(../img/top-pic-r.jpg) right no-repeat;
+        img {
         display: block;
         width: 100%;
         height: auto;
     }
+}
+
+.feature-content {
+    width: 100%;
+    position: relative;
+}
+
+.feature-buttons {
+    position: absolute;
+    top:5%;
+    right: 0;
+}
+.feature-buttons p {
+    margin: 5% 0 0 0;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    color: #FFF;
+    background: $transparent-purple;
+}
+
+.feature-buttons p:hover {
+    cursor: pointer;
+    background: $transparent-grey;
 }
 
 #homepage-services {
@@ -46,6 +73,16 @@
 }
 
 @media ($min_bp_a) {
+    .feature-buttons {
+        top: 20px;
+        right: 40px;
+    }
+
+    .feature-buttons p {
+        margin: 20px 0 0 0;
+        padding: 15px;
+        text-align: center;
+    }
 
     .service {
         padding: 25px;
