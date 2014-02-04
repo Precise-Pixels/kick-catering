@@ -54,6 +54,14 @@ header {
     right: 10px;
 }
 
+.jagged-border {
+    height: 7px;
+    width: 100%;
+    position: absolute;
+    background: url(../img/jagged-border.png);
+    background-repeat: repeat;
+}
+
 @media ($min_bp_a) {
 
     .twitter {
