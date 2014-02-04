@@ -1,5 +1,4 @@
 <section id="homepage-feature">
-    <div id="header-arrows"></div>
     <div class="feature-content align-centre">
         <div class="feature-buttons">
             <p>Looking for work?</p>

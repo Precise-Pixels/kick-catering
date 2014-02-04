@@ -19,5 +19,5 @@
         <div id="nav-fade-out"></div>
         <?php require_once('loginout_button.php'); ?>
     </div>
-    <div class="jagged-border"></div>
+    <div id="header-arrows"></div>
 </header>
