@@ -87,11 +87,12 @@ nav a:hover {
     }
 
     nav {
-        width: 515px;
-        top: auto;
-        margin: 0 auto;
+        width: auto;
+        height: auto;
         position: relative;
-        display: block;
+        top: auto;
+        margin: 10px auto 0 auto;
+        display: inline-block;
     }
 
     nav li {
@@ -103,7 +104,6 @@ nav a:hover {
     }
 
     nav li:last-child {
-        padding-right: 0;
         border-right: 0;
     }
 
@@ -118,6 +118,7 @@ nav a:hover {
     nav a {
         border-bottom: none;
         font-size: 18px;
+        font-weight: 700;
     }
 }
 
@@ -125,15 +126,14 @@ nav a:hover {
 
     nav {
         width: auto;
+        position: absolute;
         top: 160px;
         left: auto;
         right: 45px;
-        position: absolute;
-        display: inline;
+        margin: 0;
     }
 
-    nav a {
-        font-size: 20px;
-        font-weight: 700;
+    nav li:last-child {
+        padding-right: 0;
     }
 }
