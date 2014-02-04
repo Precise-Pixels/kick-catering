@@ -132,29 +132,7 @@ nav a:hover {
         display: inline;
     }
 
-    nav li {
-        width: auto;
-        padding: 0 15px;
-        border-bottom: none;
-        border-right: 2px solid #CCC;
-        background: none;
-    }
-
-    nav li:last-child {
-        padding-right: 0;
-        border-right: 0;
-    }
-
-    nav li:hover {
-        background: none;
-    }
-
-    nav li:hover > a {
-        color: $purple;
-    }
-
     nav a {
-        border-bottom: none;
         font-size: 20px;
         font-weight: 700;
     }
