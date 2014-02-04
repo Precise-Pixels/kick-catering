@@ -80,10 +80,48 @@ nav a:hover {
     border-bottom: 0;
 }
 
-@media ($min_bp_b) {
+@media ($min_bp_a) {
+
     #menu-btn {
         display: none;
     }
+
+    nav {
+        width: 515px;
+        top: auto;
+        margin: 0 auto;
+        position: relative;
+        display: block;
+    }
+
+    nav li {
+        width: auto;
+        padding: 0 15px;
+        border-bottom: none;
+        border-right: 2px solid #CCC;
+        background: none;
+    }
+
+    nav li:last-child {
+        padding-right: 0;
+        border-right: 0;
+    }
+
+    nav li:hover {
+        background: none;
+    }
+
+    nav li:hover > a {
+        color: $purple;
+    }
+
+    nav a {
+        border-bottom: none;
+        font-size: 18px;
+    }
+}
+
+@media ($min_bp_b) {
 
     nav {
         width: auto;
