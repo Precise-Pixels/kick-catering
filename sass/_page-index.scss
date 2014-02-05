@@ -7,16 +7,12 @@
     text-align: center;
     background: url(../img/top-pic-l.jpg) left no-repeat,
                 url(../img/top-pic-r.jpg) right no-repeat;
-        img {
+
+    img {
         display: block;
         width: 100%;
         height: auto;
     }
-}
-
-.feature-content {
-    width: 100%;
-    position: relative;
 }
 
 .feature-buttons {
@@ -28,7 +24,6 @@
 .feature-buttons a {
     margin-top: 10px;
     display: block;
-    background: $purple;
     background: $transparent-purple;
 }
 
@@ -49,6 +44,7 @@
     color: white;
     cursor: pointer;
     background: #222;
+
     img {
         height: 45px;
     }
@@ -92,22 +88,3 @@
         border: 1px solid #333;
     }
 }
-
-@media ($min_bp_b) {
-
-    #homepage-text {
-        padding: 60px 40px 60px 40px;
-    }
-
-    .homepage-text--left {
-        width: 48%;
-        float: left;
-    }
-
-    .homepage-text--right {
-        width: 48%;
-        float: right;
-    }
-}
-
-

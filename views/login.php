@@ -53,7 +53,7 @@
 
         <p>Information about login / recruitment platform</p>
 
-        <form method="post" id="login-form" class="half active">
+        <form method="post" id="login-form" class="half-padding active">
             <h1>Login</h1>
             <table>
                 <tr><td><label for="email">Email:</label></td></tr>
@@ -67,7 +67,7 @@
             <p><a href="forgotten-password">Forgotten your password</a></p>
         </form>
 
-        <form method="post" id="register-form" class="half">
+        <form method="post" id="register-form" class="half-padding">
             <h1>Register</h1>
             <table>
                 <tr><td><label for="email">Email:</label></td></tr>

@@ -1,5 +1,5 @@
 <section id="homepage-feature">
-    <div class="feature-content align-centre">
+    <div class="align-centre">
         <div class="feature-buttons">
             <a href="#" class="btn">Looking for work?</a>
             <a href="#" class="btn">Require a chef?</a>
@@ -11,8 +11,8 @@
 <section>
     <div class="section-padding align-centre l-grey">
         <h1>Specialist Catering</h1>
-        <p class="homepage-text--left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien odio, hendrerit vitae diam fermentum, pulvinar iaculis metus. Ut mattis pulvinar sapien ac tempor.</p>
-        <p class="homepage-text--right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien odio, hendrerit vitae diam <a href="#">fermentum</a>, pulvinar iaculis metus. Ut mattis pulvinar sapien ac tempor.</p>
+        <p class="half-padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien odio, hendrerit vitae diam fermentum, pulvinar iaculis metus. Ut mattis pulvinar sapien ac tempor.</p>
+        <p class="half-padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien odio, hendrerit vitae diam <a href="#">fermentum</a>, pulvinar iaculis metus. Ut mattis pulvinar sapien ac tempor.</p>
     </div>
 </section>
 
