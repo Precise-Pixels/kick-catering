@@ -5,23 +5,23 @@
 }
 
 .twitter {
-    top: 10px;
-    right: 70px;
-    background: url(../img/sprite-sheet.svg) 0px 0px;
+    top: 20px;
+    right: 250px;
+    background: url(/img/sprite-sheet.svg) 0px 0px;
 }
 
 .facebook  {
-    top: 10px;
-    right: 100px;
-    background: url(../img/sprite-sheet.svg) -20px 0px;
+    top: 50px;
+    right: 220px;
+    background: url(/img/sprite-sheet.svg) -20px 0px;
 }
 
 .twitter:hover {
-    background: url(../img/sprite-sheet.svg) 0px -20px;
+    background: url(/img/sprite-sheet.svg) 0px -20px;
 }
 
 .facebook:hover {
-    background: url(../img/sprite-sheet.svg) -20px -20px;
+    background: url(/img/sprite-sheet.svg) -20px -20px;
 }
 
 #login-btn {
