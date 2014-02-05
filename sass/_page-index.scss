@@ -27,24 +27,16 @@
     background: $transparent-purple;
 }
 
-#homepage-services {
-    width: 100%;
-    float: left;
+#homepage-services,
+#homepage-quote {
     padding: 20px;
-    border: 0;
-    background: #222;
 }
 
 .service {
-    width: 50%;
-    float: left;
-    padding: 10px;
     padding: 20px 10px 0;
     border: 1px solid #333;
+    color: #FFF;
     text-align: center;
-    color: white;
-    cursor: pointer;
-    background: #222;
 
     img {
         height: 45px;
@@ -52,14 +44,9 @@
 }
 
 .service:hover {
+    border: 1px solid #333;
+    color: #FFF;
     background: #333;
-}
-
-#homepage-quote {
-    width: 100%;
-    float: right;
-    padding: 20px;
-    background: #222;
 }
 
 @media ($min_bp_a) {
@@ -76,8 +63,8 @@
         padding: 35px 25px 15px;
     }
     
-    #homepage-services, #homepage-quote {
-        width: 50%;
+    #homepage-services,
+    #homepage-quote {
         padding: 0;
     }
 
