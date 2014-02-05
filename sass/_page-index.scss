@@ -5,7 +5,7 @@
     position: relative;
     margin: 0 auto;
     text-align: center;
-    background: url(../img/top-pic-l.jpg);
+    background: url(../img/feature-bkg.jpg) no-repeat;
     background-size: cover;
 
     img {
@@ -27,16 +27,23 @@
     background: $transparent-purple;
 }
 
-#homepage-services,
-#homepage-quote {
+#homepage-services {
+    width: 100%;
+    float: left;
     padding: 20px;
+    border: 0;
+    background: #222;
 }
 
 .service {
+    width: 50%;
+    float: left;
     padding: 10px;
     border: 1px solid #333;
-    color: #FFF;
     text-align: center;
+    color: white;
+    cursor: pointer;
+    background: #222;
 
     img {
         height: 45px;
@@ -44,9 +51,14 @@
 }
 
 .service:hover {
-    border: 1px solid #333;
-    color: #FFF;
     background: #333;
+}
+
+#homepage-quote {
+    width: 100%;
+    float: right;
+    padding: 20px;
+    background: #222;
 }
 
 @media ($min_bp_a) {
@@ -63,8 +75,8 @@
         padding: 25px;
     }
     
-    #homepage-services,
-    #homepage-quote {
+    #homepage-services, #homepage-quote {
+        width: 50%;
         padding: 0;
     }
 
