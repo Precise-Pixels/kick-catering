@@ -19,22 +19,22 @@
 <section class="d-grey">
    <div class="align-centre">
         <div id="homepage-services" class="half">
-            <div class="service half">
+            <a href="#" class="service half">
                 <img src="../img/chefagencyimg.png"/>
                 <h2>Agency</h2>
-            </div>
-            <div class="service half">
+            </a>
+            <a href="#" class="service half">
                 <img src="../img/consultancyimg.png"/>
                 <h2>Consultancy</h2>
-            </div>
-            <div class="service half">
+            </a>
+            <a href="#" class="service half">
                 <img src="../img/cateringcontractsimg.png"/>
                 <h2>Contracts</h2>
-            </div>
-            <div class="service half">
+            </a>
+            <a href="#" class="service half">
                 <img src="../img/procurementsimg.png"/>
                 <h2>Procurements</h2>
-            </div>
+            </a>
         </div>
         <div id="homepage-quote" class="half">
             <blockquote>Mauris quam justo, luctus ut iaculis id, scelerisque at risus. Aliquam at odio elementum, pellentesque odio id, semper metus. Donec rhoncus at dolor a condimentum.</blockquote>
