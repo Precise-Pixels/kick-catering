@@ -32,7 +32,7 @@
     float: left;
     padding: 20px;
     border: 0;
-    background: #222222;
+    background: #222;
 }
 
 .service {
@@ -57,8 +57,8 @@
 #homepage-quote {
     width: 100%;
     float: right;
-    background:#222;
     padding: 20px;
+    background: #222;
 }
 
 @media ($min_bp_a) {
@@ -81,7 +81,7 @@
     }
 
     #homepage-quote {
-        margin: 8% 0 0 0;
+        margin-top: 8%;
     }
 
     #homepage-services {
