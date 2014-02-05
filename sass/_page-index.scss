@@ -5,8 +5,8 @@
     position: relative;
     margin: 0 auto;
     text-align: center;
-    background: url(../img/top-pic-l.jpg) left no-repeat,
-                url(../img/top-pic-r.jpg) right no-repeat;
+    background: url(../img/top-pic-l.jpg);
+    background-size: cover;
 
     img {
         display: block;
