@@ -4,7 +4,7 @@
             <a href="#" class="btn">Looking for work?</a>
             <a href="#" class="btn">Require a chef?</a>
         </div>
-        <img src="/img/top-pic.jpg">
+        <img src="/img/feature.jpg">
     </div>
 </section>
 
