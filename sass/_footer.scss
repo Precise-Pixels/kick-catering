@@ -1,3 +1,58 @@
 footer {
     height: 350px;
+    text-align: center;
+}
+
+.footer-padding {
+    position: relative;
+    padding: 40px 45px;
+}
+
+#contact, #contact-info {
+    width: 100%;
+    color: #CCC;
+    text-align: left;
+}
+
+#contact {
+    float: left;
+}
+
+#contact-info {
+    float: right;
+}
+
+#map {
+    height: 200px;
+    width: 100%;
+    float: left;
+    background-color: #CCC;
+}
+
+#copyright {
+    width: 100%;
+    float: left;
+}
+
+@media ($min_bp_a) {
+    #contact, #contact-info {
+    width: 50%;
+    color: #CCC;
+    text-align: left;
+    }
+}
+
+@media ($min_bp_b) {
+    #contact, #contact-info {
+        width: 30%;
+        float: left;
+        color: #CCC;
+        text-align: left;
+    }
+
+    #map {
+        width: 60%;
+        margin-left: 10%;
+        float: right;
+    }
 }
