@@ -28,24 +28,28 @@ a.btn:hover {
 }
 
 .burger {
-    height: 40px;
-    background-position: -41px 0;
+    height: 20px;
+    background-position: -40px 0;
 }
 
 .burger:hover {
-    background-position: -86px 0;
+    background-position: -66px 0;
 }
 
 #menu-toggle:checked ~ .burger {
-    background-position: -130px 0;
+    background-position: -92px 0;
 }
 
 #menu-toggle:checked ~ .burger:hover {
-    background-position: -170px 0;
+    background-position: -115px 0;
+}
+
+.login {
+    
 }
 
 .twitter {
-    top: 20px;
+    top: 10px;
     right: 210px;
     background-position: 0 0;
 }
@@ -55,7 +59,7 @@ a.btn:hover {
 }
 
 .facebook  {
-    top: 20px;
+    top: 10px;
     right: 180px;
     background-position: -20px 0;
 }
