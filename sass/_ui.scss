@@ -27,12 +27,15 @@ a.btn:hover {
 .burger {
     background-position: -40px 0;
 }
+
 .burger:hover {
     background-position: -85px 0;
 }
+
 #menu-toggle:checked ~ .burger {
     background-position: -130px 0;
 }
+
 #menu-toggle:checked ~ .burger:hover {
     background-position: -170px 0;
 }
