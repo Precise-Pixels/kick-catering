@@ -20,19 +20,19 @@
    <div class="align-centre">
         <div id="homepage-services" class="half">
             <a href="services#agency" class="service half">
-                <img src="/img/chefagencyimg.png"/>
+                <div class="icon agency"></div>
                 <h2>Agency</h2>
             </a>
             <a href="services#consultancy" class="service half">
-                <img src="/img/consultancyimg.png"/>
+                <div class="icon consultancy"></div>
                 <h2>Consultancy</h2>
             </a>
             <a href="services#contracts" class="service half">
-                <img src="/img/cateringcontractsimg.png"/>
+                <div class="icon contracts"></div>
                 <h2>Contracts</h2>
             </a>
             <a href="services#procurements" class="service half">
-                <img src="/img/procurementsimg.png"/>
+                <div class="icon procurements"></div>
                 <h2>Procurements</h2>
             </a>
         </div>

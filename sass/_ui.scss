@@ -9,11 +9,68 @@
 }
 
 .btn:hover {
+    color: #FFF;
     background: #222;
 }
 
 a.btn:hover {
     border: 0;
+}
+
+.icon {
+    width: 60px;
+    height: 45px;
+    margin: 0 auto;
+    background: url(/img/sprite-sheet.svg);
+}
+
+.burger {
+    background-position: -40px 0;
+}
+.burger:hover {
+    background-position: -85px 0;
+}
+#menu-toggle:checked ~ .burger {
+    background-position: -130px 0;
+}
+#menu-toggle:checked ~ .burger:hover {
+    background-position: -170px 0;
+}
+
+.twitter {
+    top: 20px;
+    right: 210px;
+    background-position: 0 0;
+}
+
+.twitter:hover {
+    background-position: 0 -20px;
+}
+
+.facebook  {
+    top: 20px;
+    right: 180px;
+    background-position: -20px 0;
+}
+
+.facebook:hover {
+    background-position: -20px -20px;
+}
+
+.agency {
+    background-position: -3px -51px;
+}
+
+.consultancy {
+    background-position: -63px -51px;
+}
+
+.contracts {
+    background-position: -123px -51px;
+}
+
+.procurements {
+    background-position: -183px -51px;
 }
 
 form {
