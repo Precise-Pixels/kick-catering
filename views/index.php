@@ -1,8 +1,8 @@
 <section id="homepage-feature">
     <div class="align-centre">
         <div class="feature-buttons">
-            <a href="#" class="btn">Looking for work?</a>
-            <a href="#" class="btn">Require a chef?</a>
+            <a href="recruitment-platform#employee" class="btn">Looking for work?</a>
+            <a href="recruitment-platform#employer" class="btn">Require a chef?</a>
         </div>
         <img src="/img/feature.jpg">
     </div>
@@ -19,19 +19,19 @@
 <section class="d-grey">
    <div class="align-centre">
         <div id="homepage-services" class="half">
-            <a href="#" class="service half">
+            <a href="agency" class="service half">
                 <img src="/img/chefagencyimg.png"/>
                 <h2>Agency</h2>
             </a>
-            <a href="#" class="service half">
+            <a href="consultancy" class="service half">
                 <img src="/img/consultancyimg.png"/>
                 <h2>Consultancy</h2>
             </a>
-            <a href="#" class="service half">
+            <a href="contracts" class="service half">
                 <img src="/img/cateringcontractsimg.png"/>
                 <h2>Contracts</h2>
             </a>
-            <a href="#" class="service half">
+            <a href="procurements" class="service half">
                 <img src="/img/procurementsimg.png"/>
                 <h2>Procurements</h2>
             </a>
