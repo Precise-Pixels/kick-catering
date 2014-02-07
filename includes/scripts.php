@@ -1,7 +1,7 @@
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
 
 <?php if($_SERVER['SERVER_NAME'] == 'kc.dev'): ?>
-    <!-- individual scripts <script src='/js/*.js'></script> -->
+    <script src='/js/page-login.js'></script>
 <?php else: ?>
     <script src='/build/scripts.min.js'></script>
     <script async src="http://www.google-analytics.com/ga.js"></script>

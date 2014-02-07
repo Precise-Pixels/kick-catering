@@ -1,6 +1,6 @@
 <?php
 if(isset($_SESSION['status']) && $_SESSION['status'] == 'loggedin') {
-    echo '<a href="logout"><button>Logout</button></a>';
+    echo '<a href="logout" id="login-btn" class="icon loggedout" title="Logout">LOGOUT</a>';
 } else {
-    echo '<a href="login?r=' . ltrim($_SERVER['REQUEST_URI'], '/') . '"><button>Login</button></a>';
+    echo '<a href="login" id="login-btn" class="icon loggedin" title="Login / Register">LOGIN / REGISTER</a>';
 }

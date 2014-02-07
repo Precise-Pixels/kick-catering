@@ -1,0 +1,186 @@
+.btn {
+    height: 40px;
+    padding: 10px 25px;
+    border: 0;
+    cursor: pointer;
+    color: #FFF;
+    font-weight: 600;
+    background: $purple;
+}
+
+.btn:hover {
+    color: #FFF;
+    background: #222;
+}
+
+a.btn:hover {
+    border: 0;
+}
+
+a.icon, a.icon:hover {
+    border-bottom: 0;
+}
+
+.icon {
+    margin: 0 auto;
+    text-indent: -9999px;
+    background: url(/img/sprite-sheet.svg);
+}
+
+.service .icon {
+    width: 60px;
+    height: 45px;
+}
+
+.burger {
+    height: 20px;
+    background-position: -40px 0;
+}
+
+.burger:hover {
+    background-position: -66px 0;
+}
+
+#menu-toggle:checked ~ .burger {
+    background-position: -92px 0;
+}
+
+#menu-toggle:checked ~ .burger:hover {
+    background-position: -115px 0;
+}
+
+.loggedin {
+    background-position: -140px 0;
+}
+
+.loggedin:hover {
+    background-position: -161px 0;
+}
+
+.loggedout {
+    background-position: -183px 0;
+}
+
+.loggedout:hover {
+    background-position: -204px 0;
+}
+
+.twitter {
+    top: 10px;
+    right: 90px;
+    background-position: 0 0;
+}
+
+.twitter:hover {
+    background-position: 0 -20px;
+}
+
+.facebook  {
+    top: 10px;
+    right: 60px;
+    background-position: -20px 0;
+}
+
+.facebook:hover {
+    background-position: -20px -20px;
+}
+
+.agency {
+    background-position: -3px -51px;
+}
+
+.consultancy {
+    background-position: -63px -51px;
+}
+
+.contracts {
+    background-position: -123px -51px;
+}
+
+.procurements {
+    background-position: -183px -51px;
+}
+
+form {
+    padding: 20px 0;
+}
+
+#login-form:not(.hover),
+#register-form:not(.hover), {
+    opacity: .4;
+}
+
+#login-form.active,
+#register-form.active {
+    opacity: 1;
+}
+
+table {
+    width: 100%;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+input[type=file]::-webkit-file-upload-button {
+    border: 0;
+    color: #FFF;
+    margin: 0;
+    padding: 0 20px 0 0;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: 0;
+}
+
+input[type=file]::-ms-browse {
+    border: 0;
+    color: #FFF;
+    margin: 0;
+    padding: 0 20px 0;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: 0;
+}
+
+input[type=radio] {
+    width: auto;
+}
+
+input[type=submit] {
+    margin-top: 15px;
+}
+
+label {
+    font-weight: 800;
+}
+
+textarea {
+    height: 100px;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline-color: #999;
+}
+
+@media ($min_bp_a) {
+    .twitter {
+        top: 50px;
+        right: 110px;
+    }
+
+    .facebook  {
+        top: 50px;
+        right: 80px;
+    }
+}

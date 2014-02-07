@@ -1,8 +1,40 @@
-footer, header, nav {
+* {
+   box-sizing: border-box;
+}
+
+footer, header, nav, section {
   display: block;
 }
 
 body {
-    background: #DDD;
     margin: 0;
+    padding: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    // Open Sans font weights:
+    // 300 light, 400 normal, 600 semi-bold, 700 bold, 800 extra-bold
+    color: #222;
+    background: #FFF;
+}
+
+.align-centre {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+section {
+    overflow: hidden;
+}
+
+.section-padding {
+    overflow: hidden;
+    padding: 60px 45px;
+}
+
+a img {
+    border: 0;
 }
