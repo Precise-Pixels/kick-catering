@@ -1,7 +1,7 @@
 <header>
     <div class="header-padding align-centre">
-        <a href="#"><div class="social facebook"></div></a>
-        <a href="#"><div class="social twitter"></div></a>
+        <a href="https://www.facebook.com/kickcatering" target="_blank"><div class="social facebook"></div></a>
+        <a href="https://twitter.com/KickCatering" target="_blank"><div class="social twitter"></div></a>
         <?php require_once('loginout_button.php'); ?>
         <a href="/" id="logo"><img src="img/logo.png"/></a>
         <p id="header-contact">Kick Catering | Address Line 1, Line Two, Third Line, ABC 1AB | 012345 123456</p>
