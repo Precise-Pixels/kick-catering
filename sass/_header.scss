@@ -28,7 +28,9 @@ header {
     width: 165px;
     height: 155px;
     margin: 0 auto;
+    display: block;
     border-bottom: 0;
+    text-indent: -9999px;
     background: url(/img/sprite-sheet.svg);
     background-position: 165px 0px;
 }
