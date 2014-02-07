@@ -17,6 +17,10 @@ a.btn:hover {
     border: 0;
 }
 
+a.icon, a.icon:hover {
+    border-bottom: 0;
+}
+
 .icon {
     margin: 0 auto;
     background: url(/img/sprite-sheet.svg);
@@ -44,13 +48,25 @@ a.btn:hover {
     background-position: -115px 0;
 }
 
-.login {
-    
+.loggedin {
+    background-position: -140px 0;
+}
+
+.loggedin:hover {
+    background-position: -161px 0;
+}
+
+.loggedout {
+    background-position: -183px 0;
+}
+
+.loggedout:hover {
+    background-position: -204px 0;
 }
 
 .twitter {
     top: 10px;
-    right: 210px;
+    right: 60px;
     background-position: 0 0;
 }
 
@@ -60,7 +76,7 @@ a.btn:hover {
 
 .facebook  {
     top: 10px;
-    right: 180px;
+    right: 40px;
     background-position: -20px 0;
 }
 
@@ -154,4 +170,16 @@ input:focus,
 select:focus,
 textarea:focus {
     outline-color: #999;
+}
+
+@media ($min_bp_a) {
+    .twitter {
+        top: 50px;
+        right: 100px;
+    }
+
+    .facebook  {
+        top: 50px;
+        right: 80px;
+    }
 }

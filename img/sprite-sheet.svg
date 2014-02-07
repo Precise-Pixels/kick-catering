@@ -79,40 +79,38 @@
 <rect x="66.834" y="15.302" fill="#222222" width="25.085" height="4.773"/>
 <rect x="66.834" y="0.075" fill="#222222" width="25.085" height="4.773"/>
 <g>
-	<rect x="140.899" y="0.076" fill="#951B81" width="2.39" height="6.314"/>
-	<rect x="140.899" y="13.762" fill="#951B81" width="2.39" height="6.314"/>
-	<rect x="158.554" y="0.076" fill="#951B81" width="2.391" height="20"/>
-	<rect x="140.898" y="17.688" fill="#951B81" width="20.024" height="2.387"/>
-	<rect x="140.898" y="0.076" fill="#951B81" width="20.024" height="2.387"/>
-	<rect x="140.898" y="8.882" fill="#951B81" width="7.509" height="2.387"/>
-	<polygon fill="#951B81" points="148.407,6.296 153.421,10.057 148.407,13.817 	"/>
+	<rect x="140.918" y="-0.019" fill="#951B81" width="2.384" height="6.313"/>
+	<rect x="140.918" y="13.668" fill="#951B81" width="2.384" height="6.313"/>
+	<rect x="158.25" y="-0.019" fill="#951B81" width="2.666" height="20"/>
+	<rect x="141.078" y="17.594" fill="#951B81" width="19.815" height="2.387"/>
+	<rect x="141.313" y="-0.019" fill="#951B81" width="19.581" height="2.387"/>
+	<rect x="140.916" y="8.788" fill="#951B81" width="8.148" height="2.387"/>
+	<polygon fill="#951B81" points="148.408,6.201 153.41,9.962 148.408,13.723 	"/>
 </g>
 <text transform="matrix(1 0 0 1 106.75 -18.9395)" font-family="'MyriadPro-Regular'" font-size="12">951b81</text>
 <g>
-	<rect x="163.315" y="0.076" fill="#222222" width="2.39" height="6.314"/>
-	<rect x="163.315" y="13.762" fill="#222222" width="2.39" height="6.314"/>
-	<rect x="180.97" y="0.076" fill="#222222" width="2.391" height="20"/>
-	<rect x="163.314" y="17.688" fill="#222222" width="20.023" height="2.387"/>
-	<rect x="163.314" y="0.076" fill="#222222" width="20.023" height="2.387"/>
-	<rect x="163.314" y="8.882" fill="#222222" width="7.509" height="2.387"/>
-	<polygon fill="#222222" points="170.823,6.296 175.837,10.057 170.823,13.817 	"/>
+	<rect x="161.896" y="-0.019" fill="#222222" width="2.385" height="6.313"/>
+	<rect x="161.896" y="13.668" fill="#222222" width="2.385" height="6.313"/>
+	<rect x="179.228" y="-0.019" fill="#222222" width="2.666" height="20"/>
+	<rect x="162.056" y="17.594" fill="#222222" width="19.815" height="2.387"/>
+	<rect x="162.29" y="-0.019" fill="#222222" width="19.581" height="2.387"/>
+	<rect x="161.894" y="8.788" fill="#222222" width="8.148" height="2.387"/>
+	<polygon fill="#222222" points="169.386,6.201 174.388,9.962 169.386,13.723 	"/>
 </g>
+<rect x="183.896" y="-0.033" fill="#951B81" width="2.385" height="6.313"/>
+<rect x="183.896" y="13.654" fill="#951B81" width="2.385" height="6.313"/>
+<rect x="201.228" y="-0.005" fill="#951B81" width="2.666" height="19.972"/>
+<rect x="184.056" y="17.58" fill="#951B81" width="19.815" height="2.387"/>
+<polyline fill="#951B81" points="184.29,2.373 184.29,-0.014 203.871,-0.014 203.871,2.373 "/>
+<rect x="188.237" y="8.735" fill="#951B81" width="8.148" height="2.387"/>
+<polygon fill="#951B81" points="188.894,13.708 183.892,9.947 188.894,6.187 "/>
 <g>
-	<rect x="185.917" y="0.076" fill="#951B81" width="2.391" height="6.314"/>
-	<rect x="185.917" y="13.762" fill="#951B81" width="2.391" height="6.314"/>
-	<rect x="203.571" y="0.076" fill="#951B81" width="2.391" height="20"/>
-	<rect x="185.915" y="17.688" fill="#951B81" width="20.024" height="2.387"/>
-	<rect x="185.915" y="0.076" fill="#951B81" width="20.024" height="2.387"/>
-	<rect x="190.927" y="8.844" fill="#951B81" width="7.51" height="2.387"/>
-	<polygon fill="#951B81" points="190.927,13.817 185.913,10.057 190.927,6.295 	"/>
-</g>
-<g>
-	<rect x="208.408" y="0.038" fill="#222222" width="2.391" height="6.314"/>
-	<rect x="208.408" y="13.724" fill="#222222" width="2.391" height="6.314"/>
-	<rect x="226.063" y="0.038" fill="#222222" width="2.391" height="20"/>
-	<rect x="208.406" y="17.65" fill="#222222" width="20.024" height="2.387"/>
-	<rect x="208.406" y="0.038" fill="#222222" width="20.024" height="2.387"/>
-	<rect x="213.418" y="8.806" fill="#222222" width="7.51" height="2.387"/>
-	<polygon fill="#222222" points="213.418,13.779 208.404,10.019 213.418,6.257 	"/>
+	<rect x="204.873" y="-0.019" fill="#222222" width="2.385" height="6.313"/>
+	<rect x="204.873" y="13.668" fill="#222222" width="2.385" height="6.313"/>
+	<rect x="222.205" y="-0.019" fill="#222222" width="2.666" height="20"/>
+	<rect x="205.033" y="17.594" fill="#222222" width="19.815" height="2.387"/>
+	<rect x="205.268" y="-0.019" fill="#222222" width="19.581" height="2.387"/>
+	<rect x="209.215" y="8.75" fill="#222222" width="8.148" height="2.387"/>
+	<polygon fill="#222222" points="209.871,13.723 204.869,9.962 209.871,6.201 	"/>
 </g>
 </svg>

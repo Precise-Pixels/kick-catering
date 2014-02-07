@@ -5,9 +5,12 @@
 }
 
 #login-btn {
+    width: 20px;
+    height: 20px;
     position: absolute;
     top: 10px;
     right: 10px;
+    text-indent: -9999px;
 }
 
 header {
@@ -29,12 +32,6 @@ header {
     color: #999;
 }
 
-#login-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
 #header-arrows {
    width: 100%; 
    height: 5px;
@@ -49,18 +46,8 @@ header {
         padding-bottom: 20px;
     }
 
-    .twitter {
-        top: 50px;
-        right: 240px;
-    }
-
-    .facebook  {
-        top: 50px;
-        right: 210px;
-    }
-
     #login-btn {
-        top: 40px;
+        top: 50px;
         right: 45px;
     }
 
@@ -72,11 +59,6 @@ header {
 @media ($min_bp_b) {
     header {
         text-align: left;
-    }
-
-    #login-btn {
-        top: 40px;
-        right: 45px;
     }
 
     #header-contact {
@@ -95,11 +77,5 @@ header {
 
     #logo {
         float: left;
-    }
-
-    #login-btn {
-        top: 40px;
-        right: 45px;
-
     }
 }
