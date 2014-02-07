@@ -1,8 +1,8 @@
 <section id="homepage-feature">
     <div class="align-centre">
         <div class="feature-buttons">
-            <a href="recruitment-platform#employee" class="btn">Looking for work?</a>
-            <a href="recruitment-platform#employer" class="btn">Require a chef?</a>
+            <a href="recruitment#employee" class="btn">Looking for work?</a>
+            <a href="recruitment#employer" class="btn">Require a chef?</a>
         </div>
         <img src="/img/feature.jpg">
     </div>
