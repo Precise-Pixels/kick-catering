@@ -18,18 +18,22 @@ a.btn:hover {
 }
 
 .icon {
-    width: 60px;
-    height: 45px;
     margin: 0 auto;
     background: url(/img/sprite-sheet.svg);
 }
 
+.service .icon {
+    width: 60px;
+    height: 45px;
+}
+
 .burger {
-    background-position: -40px 0;
+    height: 40px;
+    background-position: -41px 0;
 }
 
 .burger:hover {
-    background-position: -85px 0;
+    background-position: -86px 0;
 }
 
 #menu-toggle:checked ~ .burger {
