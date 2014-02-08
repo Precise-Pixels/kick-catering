@@ -1,10 +1,13 @@
+.full,
 .half {
     width: (100%/1);
     float: left;
 }
 
-.quarter {
-    width: (100%/1);
+.half-padding {
+    width: (98%/1);
+    padding: 0 1%;
+    float: left;
 }
 
 @media ($min-bp-a) {
@@ -12,27 +15,11 @@
         width: (100%/2);
     }
 
-    .quarter {
-        width: (100%/2);
-    }
-}
-
-@media ($min-bp-b) {
-    .half {
-        width: (100%/2);
+    .half-padding {
+        width: (98%/2);
     }
 
-    .quarter {
-        width: (100%/4);
-    }
-}
-
-@media ($min-bp-c) {
-    .half {
-        width: (100%/2);
-    }
-
-    .quarter {
-        width: (100%/4);
+    .half-padding:last-child {
+        float: right;
     }
 }
