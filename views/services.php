@@ -13,7 +13,17 @@
 
         <a id="contracts"></a>
         <h2>Contracts</h2>
-        <p>Sed varius bibendum posuere. Nunc ut adipiscing neque. Sed eu elementum nisl. Nam aliquet diam sed mauris aliquam consequat. Quisque fermentum fringilla volutpat. Integer varius nisi eros, nec vestibulum mauris aliquam sed.</p>
+        <p>Kick Catering offer bespoke catering packages in the care sector, we also have experience in the industrial and education sector.</p>
+        <p>Please contact us for an individual quotation for your business.</p>
+        <p>The benefits to contracting out catering include:</p>
+        <ul>
+            <li>Better buying power (cost saving)</li>
+            <li>Takes the headache out of worrying about the kitchen</li>
+            <li>Saves time and money on recruitment and staffing issues</li>
+            <li>100% compliance with EHO</li>
+            <li>Improve cash flow as all food purchasing accounts are in Kick Catering</li>
+        </ul>
+        <p>These are just a few examples of the beniftis please contact us for further details.</p>
 
         <a id="procurements"></a>
         <h2>Procurements</h2>
