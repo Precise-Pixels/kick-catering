@@ -33,7 +33,8 @@
 
         <a id="procurements"></a>
         <h2>Procurements</h2>
-        <p>Morbi placerat varius dolor, id pulvinar orci rutrum sodales. Fusce vulputate a nisl sit amet fringilla.</p>
+        <p>We have accounts with most of the major food suppliers with very competitive prices in place therefore we can save you money!</p>
+        <p>Contact us for more information.</p>
 
     </div>
 </section>
