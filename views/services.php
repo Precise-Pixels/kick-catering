@@ -9,7 +9,13 @@
 
         <a id="consultancy"></a>
         <h2>Consultancy</h2>
-        <p>Sed vitae erat at lorem interdum convallis. Phasellus pharetra quam augue, in consequat orci malesuada non. Cras sollicitudin non nisl sed pharetra. Integer imperdiet est tellus.</p>
+        <p>We have over 40 years in the catering industry; we can help you to achieve you goals. Some of the areas we can help you with are:</p>
+        <ul>
+            <li>EHO complacency - we have a selection of documents, policies and procedures that will help you be compliant</li>
+            <li>Menu planning, cost control and nutrition</li>
+            <li>Level 2/3 food hygiene training</li>
+            <li>Kitchen design</li>
+        </ul>
 
         <a id="contracts"></a>
         <h2>Contracts</h2>
