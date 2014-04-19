@@ -5,7 +5,18 @@
 
         <a id="agency"></a>
         <h2>Agency</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae magna id velit hendrerit tempus. Quisque laoreet urna ut sagittis vestibulum.</p>
+        <p>We can provide you with highly skilled, reliable, DBS checked chefs whether it is for one day or one month. We charge a flat fee for agency chefs so you know your costs upfront.</p>
+
+        <h2>Costs and Fees</h2>
+        <p>If you require a chef for a day we charge a flat rate of £10.00 per day up to 6 days. Plus chefs hourly rate*</p>
+        <p>If you require a chef for 7 days of more we charge £65.00 per week. Plus chefs hourly rate*</p>
+        <p>*Hourly rate depends on level of chef and travelling.</p>
+        <ol>
+            <li>Relief Chefs contact us via our automated recruitment platform in order to register with us.</li>
+            <li>New agency chefs candidates are interviewed by us to establish their skill base and make sure they are put in the right roles that are suited to them.</li>
+            <li>The new candidate is then put through a DBS* check to check the candidate has no criminal convictions or other non-compliances. Part of this process involves obtaining two references from current and recent employers.</li>
+        </ol>
+        <p>*DBS check costs will be passed on to the employer.</p>
 
         <a id="consultancy"></a>
         <h2>Consultancy</h2>
