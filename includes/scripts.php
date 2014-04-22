@@ -1,6 +1,7 @@
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
 
 <?php if($_SERVER['SERVER_NAME'] == 'kc.dev'): ?>
+    <script src='/js/all.js'></script>
     <script src='/js/page-login.js'></script>
 <?php else: ?>
     <script src='/build/scripts.min.js'></script>
