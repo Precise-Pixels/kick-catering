@@ -1,12 +1,7 @@
 .full,
-.half {
+.half,
+.half-margin {
     width: (100%/1);
-    float: left;
-}
-
-.half-padding {
-    width: (98%/1);
-    padding: 0 1%;
     float: left;
 }
 
@@ -15,11 +10,16 @@
         width: (100%/2);
     }
 
-    .half-padding {
+    .half-margin {
         width: (98%/2);
+        margin: 0 1%;
     }
 
-    .half-padding:last-child {
-        float: right;
+    .half-margin:nth-of-type(odd) {
+        margin-left: 0;
+    }
+
+    .half-margin:nth-of-type(even) {
+        margin-right: 0;
     }
 }

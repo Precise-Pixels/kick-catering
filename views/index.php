@@ -11,8 +11,8 @@
 <section>
     <div class="section-padding align-centre l-grey">
         <h1>Specialist Catering</h1>
-        <p class="half-padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien odio, hendrerit vitae diam fermentum, pulvinar iaculis metus. Ut mattis pulvinar sapien ac tempor.</p>
-        <p class="half-padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien odio, hendrerit vitae diam <a href="#">fermentum</a>, pulvinar iaculis metus. Ut mattis pulvinar sapien ac tempor.</p>
+        <p class="half-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien odio, hendrerit vitae diam fermentum, pulvinar iaculis metus. Ut mattis pulvinar sapien ac tempor.</p>
+        <p class="half-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien odio, hendrerit vitae diam <a href="#">fermentum</a>, pulvinar iaculis metus. Ut mattis pulvinar sapien ac tempor.</p>
     </div>
 </section>
 
