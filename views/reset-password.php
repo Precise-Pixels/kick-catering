@@ -25,16 +25,20 @@
         }
         ?>
 
-        <form method="post" class="half-padding">
-            <table>
-                <tr><td><label for="password">Password:</label></td></tr>
-                <tr><td><input type="password" name="password" required autofocus/></td></tr>
-            
-                <tr><td><input type="submit" value="RESET" class="btn"/></td></tr>
-            </table>
-        </form>
+        <div class="fraction-wrapper">
+            <form method="post" class="half-margin">
+                <table>
+                    <tr><td><label for="password">Password:</label></td></tr>
+                    <tr><td><input type="password" name="password" required autofocus/></td></tr>
+                
+                    <tr><td><input type="submit" value="RESET" class="btn"/></td></tr>
+                </table>
+            </form>
+        </div>
 
-        <p class="half-padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, porro, ex maiores amet dolore cum vitae aut quos! Architecto, et illo vel facilis repellendus inventore labore explicabo assumenda exercitationem sit.</p>
+        <div class="fraction-wrapper">
+            <p class="half-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, porro, ex maiores amet dolore cum vitae aut quos! Architecto, et illo vel facilis repellendus inventore labore explicabo assumenda exercitationem sit.</p>
+        </div>
 
     </div>
 </section>

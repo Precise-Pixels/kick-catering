@@ -19,16 +19,20 @@
         }
         ?>
 
-        <form method="post" class="half-padding">
-            <table>
-                <tr><td><label for="email">Email:</label></td></tr>
-                <tr><td><input type="email" name="email" required autofocus/></td></tr>
+        <div class="fraction-wrapper">
+            <form method="post" class="half-margin">
+                <table>
+                    <tr><td><label for="email">Email:</label></td></tr>
+                    <tr><td><input type="email" name="email" required autofocus/></td></tr>
 
-                <tr><td><input type="submit" value="RESEND" class="btn"/></td></tr>
-            </table>
-        </form>
+                    <tr><td><input type="submit" value="RESEND" class="btn"/></td></tr>
+                </table>
+            </form>
+        </div>
 
-        <p class="half-padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, porro, ex maiores amet dolore cum vitae aut quos! Architecto, et illo vel facilis repellendus inventore labore explicabo assumenda exercitationem sit.</p>
+        <div class="fraction-wrapper">
+            <p class="half-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, porro, ex maiores amet dolore cum vitae aut quos! Architecto, et illo vel facilis repellendus inventore labore explicabo assumenda exercitationem sit.</p>
+        </div>
 
     </div>
 </section>
