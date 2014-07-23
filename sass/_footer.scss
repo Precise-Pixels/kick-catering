@@ -1,3 +1,15 @@
 footer {
-    height: 350px;
+    padding: 30px 0;
+    color: #999;
+    text-align: center;
+}
+
+#sitemap {
+    margin-bottom: 20px;
+}
+
+@media ($min-bp-a) {
+    #sitemap a {
+        margin: 0 20px;
+    }
 }
